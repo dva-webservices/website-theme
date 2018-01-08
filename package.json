@@ -1,0 +1,22 @@
+{
+  "name": "dva_drupal_theme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compass": "compass watch",
+    "serve": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://bitbucket.org/jcrombie/dva-theme.git"
+  },
+  "author": "DVA Webservices",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/jcrombie/dva-theme#readme"
+}
