@@ -6,3 +6,4 @@ css
 sass-extensions
 
 output.txt
+hooks/*.sample

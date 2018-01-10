@@ -1,15 +1,13 @@
 #!C:/Program\ Files/Git/bin/sh.exe
 
 ###
-# set these environment variables first (as system variables, not user variables):
-#  DRUPAL_ENV <- dev
-#  DEV_TARGET <- //awsd76.main.dva/DVAInternet2018/sites/all/themes/custom/dva
+# set these environemnt variables first:
+#  DRUPAL_ENV <- dev|staging (prod will use different build process)
+#  DEV_TARGET <- "//awsd76.main.dva/DVAInternet2018/sites/all/themes/custom/dva"
+#  STG_TARGET <- "...TBC..."
 #
 #
 # ... then copy this file into .git/hooks
-#
-# now every time you commit to the repository, git will automatically copy the latest files 
-# on to the dev server (currently only css, js and template files are copied)
 #
 
 # check environment variables 
@@ -27,3 +25,4 @@ then
   
   echo  " ... copied new css, js and template files to $DEV_TARGET" >> output.txt
 fi
+  
