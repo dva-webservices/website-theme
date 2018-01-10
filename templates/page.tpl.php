@@ -6,6 +6,10 @@
   <noscript><p role="alert">This website needs JavaScript to work properly.</p></noscript>
   <nav class="uikit-skip-link"><a class="uikit-skip-link__link" href="#content">Skip to main content</a></nav>
   <header class="uikit-header landing-page">
+  <div class="container-fluid">
+       <?php print render($page['header_top']); ?>
+  </div>
+
     <div class="container">
 
     <?php if ($logo): ?>
@@ -66,14 +70,6 @@
   <footer class="uikit-footer" role="contentinfo">
     <div class="container">
 		<a href="javascript:" id="return-to-top" class=""><i><img alt="Button for returning to the top of the current page." src="../../docs/images/ico-gototop-white.svg" width=20 height=20></i></a>
-
-				<div class="row">
-					<div class="col-sm-4">
-						<img src="<?php print $logo; ?>" alt="Department of Veteran's Affairs logo">
-					</div>
-					<div class="col-sm-8">
         <?php print render($page['footer']); ?>
-					</div>
-				</div>
     </div>
   </footer>
