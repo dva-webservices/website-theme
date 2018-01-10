@@ -1,0 +1,25 @@
+#!C:/Program\ Files/Git/bin/sh.exe
+
+###
+# set these environemnt variables first:
+#  DRUPAL_ENV <- dev|staging (prod will use different build process)
+#  DEV_TARGET <- "//awsd76.main.dva/DVAInternet2018/sites/all/themes/custom/dva"
+#  STG_TARGET <- "...TBC..."
+#
+#
+# ... then copy this file into .git/hooks
+#
+
+# check environment variables 
+echo  "Commit detected - activating deploy script..."
+echo  "Environment = $DRUPAL_ENV, target = $DEV_TARGET" #> output.txt
+echo  "...."
+
+# check commit/tag details
+if [ "$DRUPAL_ENV" = "dev" ]
+then 
+  echo  "Environment = $DRUPAL_ENV , copying files to $DEV_TARGET" > output.txt
+  #cp -r -u css $DEV_TARGET
+  cp -r -u js $DEV_TARGET
+  #cp -r -u templates $DEV_TARGET
+fi
