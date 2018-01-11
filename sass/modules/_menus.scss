@@ -1,0 +1,29 @@
+/*header top*/
+.region-header-top {
+    background:#000000;
+    color:#ffffff;
+    text-align:right;
+    a {
+        color:#ffffff;
+        padding:0 1em;
+    } 
+}
+
+/*Main menu*/
+#block-superfish-1 {
+    clear:both;
+    ul.menu {
+        float:none;
+    }
+    .first {
+        a {
+            background-image: url("../images/icon-home.png");
+            background-size: 100% auto;
+            background-repeat:no-repeat;
+            background-position:0 30px;
+            text-indent:1000px;
+            width:15px !important;
+            overflow:hidden;
+        }
+    }
+}
