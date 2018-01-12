@@ -20,9 +20,9 @@
             background-image: url("../images/icon-home.png");
             background-size: 100% auto;
             background-repeat:no-repeat;
-            background-position:0 30px;
+            background-position:0 40px;
             text-indent:1000px;
-            width:15px !important;
+            width:1px !important;
             overflow:hidden;
         }
     }
@@ -33,4 +33,20 @@
     background-image: url("sites/all/themes/custom/dva/images/crest.png");
     background-position: 0.25px;
     background-repeat: no-repeat;
+}
+
+.group-right-column  {
+    padding-left:30px;
+}
+
+/*Footer Menu */
+#block-menu-menu-footer-menu {
+  background-color:#cccccc
+  ul.menu {
+
+    li {
+          a {
+             padding:.25em 1em 0 1em !important
+          }
+    }
 }
