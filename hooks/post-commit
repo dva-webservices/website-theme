@@ -1,6 +1,15 @@
 #!C:/Program\ Files/Git/bin/sh.exe
 
 ###
+#  This is not a great example of a hook.  It deploys the working copy to the dev server,
+# not just the code in HEAD.
+#
+#  We will use the department's Bamboo server (http://scm.main.dva/bamboo) to properly automate
+# builds on the staging and production servers
+#
+
+
+###
 # set these environemnt variables first:
 #  DRUPAL_ENV <- dev|staging (prod will use different build process)
 #  DEV_TARGET <- "//awsd76.main.dva/DVAInternet2018/sites/all/themes/custom/dva"
@@ -19,6 +28,7 @@ echo  "...." >> output.txt
 # check commit/tag details
 if [ "$DRUPAL_ENV" = "dev" ]
 then 
+  # copy working copy files onto the dev server (updates only)
   cp -r -u css $DEV_TARGET 2>> output.txt
   cp -r -u js $DEV_TARGET 2>> output.txt
   cp -r -u templates $DEV_TARGET 2>> output.txt
