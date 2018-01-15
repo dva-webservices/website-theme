@@ -1,0 +1,33 @@
+/* Home page styles */
+
+
+
+.transparent-bg {
+     background:rgba(255,255,255,0.4);
+    padding:15px;
+    margin:5%;
+}
+.banner-text {
+     position:absolute;
+}
+.banner-image img {
+    width:100%;
+     height:auto;
+}
+.card-text {
+  max-height:100px;
+  font-weight:normal;
+  padding:10px;
+}
+
+/*
+* Row with equal height columns
+* --------------------------------------------------
+*/
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+  }
+  
