@@ -1,0 +1,29 @@
+/*helper classes*/
+.example {
+  border:1px solid #cccccc;
+  min-height:150px !important;
+  background:#eeeeee;
+}
+.align-h-middle{
+text-align:center;
+}
+.align-h-right {
+text-align:right;
+}
+.align-parent {
+  position:relative
+}
+.align-v-middle{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.align-both-middle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.align-right {
+  text-align:right;
+}
