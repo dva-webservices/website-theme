@@ -27,14 +27,14 @@ jQuery(document).ready(function($){
 
 
     // Help slide gesture
-      let panels = $('.panel');
+      var panels = $('.panel');
       panels.map((index, panel) => {
-        let panelContainer = $(panel).find('.panel-container');
-        let panelHeader = $(panel).find('.panel-header');
-	let originX = 0;
-        let lastX = 0;
-	let dragging = false;
-        let uiBunch = panelContainer.add(panelHeader);
+        var panelContainer = $(panel).find('.panel-container');
+        var panelHeader = $(panel).find('.panel-header');
+	var originX = 0;
+        var lastX = 0;
+	var dragging = false;
+        var uiBunch = panelContainer.add(panelHeader);
         uiBunch.on('mousedown touchstart', (event) => {
           if (!dragging && !$(event.target).is('.panel-close')) {
             dragging = true;
@@ -45,7 +45,7 @@ jQuery(document).ready(function($){
         uiBunch.on('mousemove touchmove', (event) => {
           if (dragging) {
             lastX = (event.screenX || event.targetTouches[0].screenX);
-            let newX = lastX - originX;
+            var newX = lastX - originX;
             if (newX >= 0)
               uiBunch.css({right: -newX + 'px'});
           }
@@ -53,7 +53,7 @@ jQuery(document).ready(function($){
         uiBunch.on('mouseup touchend', (event) => {
           if (dragging && !$(event.target).is('.panel-close')) {
             dragging = false;
-            let newX = (event.screenX || lastX) - originX;
+            var newX = (event.screenX || lastX) - originX;
             if (newX > (panelContainer[0].offsetWidth * 0.25)) {
                 $(panel).removeClass('is-visible').addClass('swipe-closing');
                 window.setTimeout(() => {
