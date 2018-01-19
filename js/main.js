@@ -1,24 +1,24 @@
 jQuery(document).ready(function($){
 	// open the panel
-	$('.panel-btn').on('click', function(event){
+	$('.panel-btn').click(function(event){
 		event.preventDefault();
 		$('.panel').addClass('is-visible');
 		$("#email").focus();
 	});
 	// close the panel
-	$('.panel').on('click', function(event){
+	$('.panel').click(function(event){
 		if( $(event.target).is('.panel') || $(event.target).is('.panel-close') ) { 
 			$('.panel').removeClass('is-visible');
 			event.preventDefault();
 		}
 	});
 	// open help panel on unauth screen
-	$('.panel-help').on('click', function(event){
+	$('.panel-help').click(function(event){
 		event.preventDefault();
 		$('.panel-home-help').addClass('is-visible');
 	});
 	// close the help panel
-	$('.panel-home-help').on('click', function(event){
+	$('.panel-home-help').click(function(event){
 		if( $(event.target).is('.panel-home-help') || $(event.target).is('.panel-close') ) { 
 			$('.panel-home-help').removeClass('is-visible');
 			event.preventDefault();
@@ -56,7 +56,7 @@ jQuery(document).ready(function($){
             var newX = (event.screenX || lastX) - originX;
             if (newX > (panelContainer[0].offsetWidth * 0.25)) {
                 $(panel).removeClass('is-visible').addClass('swipe-closing');
-                window.setTimeout(() => {
+                window.setTimeout(function() {
                   $(panel).removeClass('swipe-closing');
                   uiBunch.css({right: ''});
                 }, 400);
