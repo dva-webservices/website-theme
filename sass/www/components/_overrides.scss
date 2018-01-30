@@ -1,0 +1,28 @@
+.uikit-body {
+    p {
+        max-width:none;
+    }
+}
+
+.uikit-grid {
+    .container-fluid {
+        padding-left:0;
+        padding-right:0;
+    }
+}
+.uikit-btn {
+    padding:.4em .8em;
+}
+.uikit-footer {
+    padding:0;
+}
+ /* Getting rid of white space introduced by MyService styles underneath page title */
+ h1#page-title{
+    margin-bottom: 0.5em !important;
+}
+.accordion-toppanel--wrapper{
+    background:none;
+    .uikit-accordion__title {
+        background:none;
+    }
+}

@@ -1,0 +1,21 @@
+/*header top*/
+header {
+    &.landing-page {
+      padding:0;
+    }
+  }
+  .header-top {
+    background-color:$black;
+    p {
+      margin:0;
+    }
+  }
+  .region-header-top {
+      background:$black;
+      color:$white;
+      text-align:right;
+      a {
+          color:$white;
+          padding:0 1em;
+      } 
+  }

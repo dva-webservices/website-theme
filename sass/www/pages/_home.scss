@@ -1,0 +1,32 @@
+/*hide breadcrumbs and title on homepage*/
+.page-node-12 {
+  h1.page__title {
+    position:absolute;
+    top:-10000px;
+  }
+  .breadcrumb {
+    display:none;
+  }
+}
+/*banner promotions block*/
+#block-views-banner-promotions-block.block  {
+ padding:0;
+}
+
+.banner-text {
+  position:absolute;
+  max-width:60%
+}
+.banner-image img {
+  width:100%;
+  height:auto;
+}
+
+.hero-section {
+  background-color:$grey--95;
+}  
+
+
+
+  
+

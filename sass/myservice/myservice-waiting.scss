@@ -1,0 +1,43 @@
+/**********************************
+  This controls layout of an animated icon to be displayed to indicate the change to a state of the page is still being processed. Example: Displays immediately after a claim is submitted then disappears once the "claim submitted" toast message displays.
+
+**********************************/
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
+    }
+}
+
+.waiting-bar {
+	position:relative;
+	
+	background: $blue; /* For browsers that do not support gradients */
+	background: linear-gradient(left, $gray-light, $gray-light 40%, $white 45%, $white 55%, $gray-light 60%, $gray-light); /* Standard syntax */
+    background: -webkit-linear-gradient(right, $gray-light, $gray-light 40%, $white 45%, $white 55%, $gray-light 60%, $gray-light); /* For Safari */
+    background: -o-linear-gradient(right, $gray-light, $gray-light 40%, $white 45%, $white 55%, $gray-light 60%, $gray-light); /* For Opera */
+    background: -moz-linear-gradient(to right, $gray-light, $gray-light 40%, $white 45%, $white 55%, $gray-light 60%, $gray-light); /* For Firefox */
+	padding: 0 0 2px 0;
+	margin-bottom:-18px;
+}
+
+.ico-waiting-bar {
+	background: url(../images/waiting-blue.svg) no-repeat center;
+	background-size: 30px 30px;
+	width:30px;
+	text-align: center;
+	height:30px;
+	position:absolute;
+	margin-top:-15px;
+        margin-left:-15px;
+        left:50%;
+	animation: spin linear 1s infinite;
+}
+
+.ico-waiting {
+	background: url(../images/waiting-blue.svg) no-repeat center;
+	background-size: 30px 30px;
+	height: 30px;
+	animation: spin linear 1s infinite;
+}

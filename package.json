@@ -27,17 +27,17 @@
   "scripts": {
     "compass": "compass watch",
     "serve": "node app.js",
-    "build": "node-sass sass/www/styles.scss css/styles.css",
-    "buildmain": "node-sass sass/myservice/main.scss css/main.css --output-style compressed",
-    "watch:sass": "npm run build && onchange 'sass/*.scss' 'sass/www/*.scss' -- npm run build",
+    "build:styles": "node-sass sass/www/styles.scss css/styles.css",
+    "build:main": "node-sass sass/www/main.scss css/main.css --output-style compressed",
+    "watch:sass": "npm run build:styles && onchange 'sass/*.scss' 'sass/www/*.scss' -- npm run build:styles",
     "watch": "npm-run-all --parallel serve watch:*",
     "test": "echo \"Error: no test specified\" && exit 0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://bitbucket.org/jcrombie/dva-theme.git"
+    "url": "https://github.com/dva-webservices/website-theme"
   },
   "author": "DVA Webservices",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/jcrombie/dva-theme#readme"
+  "homepage": "https://github.com/dva-webservices/website-theme#readme"
 }

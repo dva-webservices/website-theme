@@ -1,0 +1,50 @@
+/*Styles for blocks*/
+
+#block-block-3 {
+    background-color:$grey--90;
+    &.block {
+      padding:0;
+    }
+  }
+  /*what DVA does block*/
+.what-dva-does {
+  padding:30px 15%;
+  margin-top:50px;
+}
+.crest {
+  text-align:right;
+  background:$grey--85;
+  padding-bottom:15px;
+}
+.about-dva {
+  background:$grey--85;
+  padding-bottom:15px;
+  padding-left: 150px;
+  background-image: url("sites/all/themes/custom/dva/images/crest.png");
+  background-position: 0.25px;
+  background-repeat: no-repeat;
+}
+.contact-us {
+  background:$white;
+  padding-bottom:15px;
+}
+#block-block-1{
+  &.block {
+      padding:0;
+  }
+}
+
+  /*feature links*/
+
+.album {
+  margin-top:30px;
+}
+.fl-card {
+  text-align:center;
+}
+.card-text {
+  min-height:100px;
+  font-weight:normal;
+  padding: 10px;
+}
+  

@@ -1,0 +1,23 @@
+/**********************************
+	MyService theme overrides
+
+**********************************/
+
+// 1. Base (UI Kit 2.0)
+@import 'uikit';
+
+// 2. Utilities (variables and reusables)
+@import '../myservice/myservice-variables';
+
+// 3. Components (micro layout files such as buttons and navigation)
+@import '../myservice/myservice-forms';
+@import '../myservice/myservice-typography';
+@import '../myservice/myservice-sliding-panel-side';
+@import '../myservice/myservice-sliding-panel-top';
+
+
+// 4. Layout (macro layout files such as header and footer)
+@import '../myservice/myservice-header';
+
+// 5. Pages (unique styling for specific pages)
+

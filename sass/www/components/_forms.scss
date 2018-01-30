@@ -1,0 +1,36 @@
+/*Styles for webforms, form fields*/
+
+/*Apply on MyService button styling*/
+.field-name-field-application-links a.myservice-button {
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out;
+    background-color: #1057A7;
+    border: 1px solid #1057A7;
+    display: inline-block;
+    border-radius: 3px;
+    padding: .8em 1.2em;
+    cursor: pointer;
+
+    &:hover{
+        background-color: #5bcbe3;
+        border-color: transparent;
+    }
+
+}
+
+/*Override UIKIT button styles*/
+.uikit-btn, .uikit-btn a{
+    color:#ffffff !important;
+  }
+  
+
+/*Styling the Start Application field areas*/
+.field-name-field-start-application{
+    float: left;
+    width: 50%;
+}
+.field-name-field-application-links {
+    float: right;
+    width: 50%;
+}

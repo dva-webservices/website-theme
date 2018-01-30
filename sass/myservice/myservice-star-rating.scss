@@ -1,0 +1,110 @@
+/**********************************
+	The star rating component is presented to users on the final claim screen. It allows them to select a star. If they select a star an optional text feedback field is rendered with a submit button.
+
+**********************************/
+
+
+// TODO: should this be usable across the board?
+.hidden {
+  display: none;
+  opacity: 0;
+}
+
+.star-rating--wrapper {
+
+	padding:3em 0 3em 0;
+
+
+  /*
+   * Below styles adapted from:
+   * https://www.w3.org/WAI/tutorials/forms/custom-controls/#a-star-rating
+   * Note: only works with inline SVG. Will _not_ work with imported SVG from file.
+   */
+  .star-rating {
+    //clear: right;
+    color:#999;
+
+    @media print {
+      .star-rating--checked{
+        color: #F9C430;
+      }
+
+      .star-rating--unchecked * {
+        color: #666666 !important;
+      }
+    }
+
+    label.star-rating--checked, .star-rating--checked * {
+      color: #F9C430 !important;
+    }
+
+    .star-rating-input {
+      position:absolute;
+      left:1.75em;
+      bottom:0.2em;
+      height:1.5em;
+      width:1.5em;
+      //z-index:10;
+    }
+    svg, img {
+    	width: 1em;
+    	height: 1em;
+    	fill: currentColor;
+    }
+
+    label {
+    	font-size: 2em;
+    	height: 1.2em;
+    	cursor: pointer;
+    	border-bottom: 2px solid transparent;
+      padding: 10px;
+    }
+
+    input:focus + label {
+    	border-bottom-style: dotted;
+    }
+
+    label.star-rating--unchecked {
+      color: #666666;
+    }
+
+    label.star-rating--checked{
+      color: #F9C430;
+    }
+  }
+
+  .star-rating-feedback {
+    label {
+      line-height: 2 !important;
+
+      span {
+        display: block;
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
+    }
+
+    textarea {
+      margin-bottom: 1em !important;
+      z-index:10;
+    }
+  }
+}
+
+// transition animation
+.star-rating--wrapper,
+.star-rating--wrapper>* {
+  //pointer-events: none;
+  visibility: collapse;
+  max-height: 0; /* approximate max height */
+  overflow-y: hidden;
+  -webkit-transition: max-height 0.5s ease-in-out;
+  -moz-transition: max-height 0.5s ease-in-out;
+  -o-transition: max-height 0.5s ease-in-out;
+  transition: max-height 0.5s ease-in-out;
+
+  &.visible {
+    visibility: visible;
+    max-height: 500px;
+  }
+}
