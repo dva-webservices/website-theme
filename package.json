@@ -29,7 +29,7 @@
     "serve": "node app.js",
     "build:styles": "node-sass sass/www/styles.scss css/styles.css",
     "build:main": "node-sass sass/www/main.scss css/main.css --output-style compressed",
-    "watch:sass": "npm run build:styles && onchange 'sass/*.scss' 'sass/www/*.scss' -- npm run build:styles",
+    "watch:sass": "npm run build:styles && npm run build:main && onchange 'sass/*.scss' 'sass/www/*.scss' -- npm run build:styles",
     "watch": "npm-run-all --parallel serve watch:*",
     "test": "echo \"Error: no test specified\" && exit 0"
   },
