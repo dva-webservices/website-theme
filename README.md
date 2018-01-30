@@ -1,5 +1,5 @@
 # DVA website theme
-Combines yservice-prototype theem and the Digital Transformation Agency's UI-Kit 2.0
+Combines Myservice theme and the Digital Transformation Agency's UI-Kit 2.0
 
 Install Gulp CLI npm install --global gulp-cli
 
