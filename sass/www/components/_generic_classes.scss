@@ -33,10 +33,11 @@
   }
   .transparent-bg {
     background:rgba(255,255,255,0.4);
-    padding:15px 30px;
-    margin:5%;
+    padding:$standard-margin $standard-margin*2;
+    margin:$standard-margin*2;
   }
   .container-with-gradient {
+    border-top:1px solid $grey--85;
     background: $grey--85; /* Old browsers */
     background: -moz-linear-gradient(left, $grey--85 0%, $grey--85 45%, $white 66%, $white 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(left,$grey--85 0%,$grey--85 45%,$white 66%, $white 100%); /* Chrome10-25,Safari5.1-6 */
@@ -46,10 +47,51 @@
   #skip-link {
     position:absolute;
 }
+
+/*Tables*/
+caption {
+
+
+}
+
 @mixin no-padding {
   padding:0;
 }
 @mixin no-margin {
   margin:0;
 }
-  
+/*Arrows*/
+.arrow-up {
+  width: 0; 
+  height: 0; 
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;  
+  border-bottom: 30px solid $grey--80;
+}
+
+.arrow-down {
+  width: 0; 
+  height: 0; 
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;  
+  border-top: 30px solid $grey--80;
+  margin:auto;
+  margin-bottom:20px;
+}
+
+.arrow-right {
+  width: 0; 
+  height: 0; 
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;  
+  border-left: 30px solid $grey--80;
+}
+
+.arrow-left {
+  width: 0; 
+  height: 0; 
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;   
+  border-right:30px solid $grey--80; 
+}
+

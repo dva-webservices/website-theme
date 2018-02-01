@@ -42,6 +42,10 @@
    height: 0;
   }
 }
+@mixin clearfixtext {
+   display: block;
+   clear: both; 
+}
 .clearfix{
   @include clearfix;
 }

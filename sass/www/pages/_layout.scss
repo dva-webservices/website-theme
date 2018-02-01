@@ -1,4 +1,4 @@
-/*Common styles, regions, containers, backgrounds*/
+/*Common styles for  regions, containers, backgrounds*/
 
 .grey--10 {background-color:$grey--10;color:$white} /*#1a1a1a*/
 .grey--20 {background-color:$grey--20;color:$white} /*#333333*/
@@ -19,7 +19,25 @@
 .navigation {
   background-color:$grey--80;
 }
+.hero-section {
+  background-color:$grey--95;
+}
 
+.page-overview {
+  background-color:$grey--95;
+}
+  
+.section-divider {
+  border-top:1px solid $grey--80;
+}
+.full-width {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
 
 
 
