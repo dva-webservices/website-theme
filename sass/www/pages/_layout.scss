@@ -28,7 +28,7 @@
 }
   
 .section-divider {
-  border-top:1px solid $grey--80;
+  @include clearfixtext;
 }
 .full-width {
   width: 100vw;

@@ -27,4 +27,39 @@
   font-weight:normal;
   padding: 10px;
 }
+
+/*Landing page views grouped by a heading*/
+.landing-page {
+  .view-grouping {
+    @include even() {
+      background-color:$grey--95;
+      .section-divider {
+        background-color:$white;
+        border-top:$standard-margin*2 solid $grey--95;      
+        .arrow-down {
+          border-top: 30px solid $grey--95;
+        }        
+      }
+    }
+    @include odd() {
+      .section-divider {      
+        background-color:$grey--95;
+        border-top:$standard-margin*2 solid $white;      
+        .arrow-down {
+          border-top: 30px solid $white;
+        }
+    }
+    }
+    @include last-child() {
+      padding-bottom:$standard-margin*2 ;
+     .section-divider { 
+      background-color:none;
+      border:none;
+      .arrow-down {
+        border:none;
+      }
+    }    
+    }
+  }
+}
   
