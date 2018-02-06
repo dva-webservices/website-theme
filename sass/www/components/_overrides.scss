@@ -10,6 +10,9 @@
         padding-right:0;
     }
 }
+.uikit-page-alerts {
+    max-width:none;
+}
 .uikit-btn {
     padding:.4em .8em;
 }
@@ -25,4 +28,7 @@
     .uikit-accordion__title {
         background:none;
     }
+}
+ul {
+    max-width:none;
 }

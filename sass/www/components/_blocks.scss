@@ -8,13 +8,11 @@
   }
 
 
-#block-block-1{
-  &.block {
-      padding:0;
-  }
+#block-block-1{ 
+  background-color:$grey--85;
 }
 
-  /*feature links*/
+/*feature links*/
 
 .album {
   margin-top:30px;
