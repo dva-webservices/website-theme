@@ -17,9 +17,13 @@
   position:absolute;
   max-width:60%
 }
-.banner-image img {
+.banner-image {
+  height:400px;
+  overflow:hidden;
+img {
   width:100%;
   height:auto;
+}
 }
   /*what DVA does block*/
   .what-dva-does {
