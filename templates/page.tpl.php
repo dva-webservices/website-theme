@@ -82,7 +82,7 @@
   </main>
   <footer class="uikit-footer" role="contentinfo">
     <div class="container">    
-		<a href="javascript:" id="return-to-top" class=""><i><img alt="Button for returning to the top of the current page." src="../../docs/images/ico-gototop-white.svg" width=20 height=20></i></a>
+		<!--a href="javascript:" id="return-to-top" class=""><i><img alt="Button for returning to the top of the current page." src="../../docs/images/ico-gototop-white.svg" width=20 height=20></i></a-->
         <?php print render($page['footer']); ?>
     </div>
   </footer>

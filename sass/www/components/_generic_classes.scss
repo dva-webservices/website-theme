@@ -60,6 +60,8 @@ caption {
 @mixin no-margin {
   margin:0;
 }
+
+
 /*Arrows*/
 .arrow-up {
   width: 0; 
@@ -92,5 +94,16 @@ caption {
   border-top: 30px solid transparent;
   border-bottom: 30px solid transparent;   
   border-right:30px solid $grey--95; 
+}
+
+//taxonomy tags
+.field-type-taxonomy-term-reference {
+a {
+  text-decoration: none;
+  background-color:$black;
+  color:$white;
+  padding:3px 10px;
+}
+
 }
 
