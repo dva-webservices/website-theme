@@ -60,13 +60,15 @@ caption {
 @mixin no-margin {
   margin:0;
 }
+
+
 /*Arrows*/
 .arrow-up {
   width: 0; 
   height: 0; 
   border-left: 30px solid transparent;
   border-right: 30px solid transparent;  
-  border-bottom: 30px solid $grey--80;
+  border-bottom: 30px solid $grey--95;
 }
 
 .arrow-down {
@@ -74,9 +76,8 @@ caption {
   height: 0; 
   border-left: 30px solid transparent;
   border-right: 30px solid transparent;  
-  border-top: 30px solid $grey--80;
+  border-top: 30px solid $grey--95;
   margin:auto;
-  margin-bottom:20px;
 }
 
 .arrow-right {
@@ -84,7 +85,7 @@ caption {
   height: 0; 
   border-top: 30px solid transparent;
   border-bottom: 30px solid transparent;  
-  border-left: 30px solid $grey--80;
+  border-left: 30px solid $grey--95;
 }
 
 .arrow-left {
@@ -92,6 +93,17 @@ caption {
   height: 0; 
   border-top: 30px solid transparent;
   border-bottom: 30px solid transparent;   
-  border-right:30px solid $grey--80; 
+  border-right:30px solid $grey--95; 
+}
+
+//taxonomy tags
+.field-type-taxonomy-term-reference {
+a {
+  text-decoration: none;
+  background-color:$black;
+  color:$white;
+  padding:3px 10px;
+}
+
 }
 

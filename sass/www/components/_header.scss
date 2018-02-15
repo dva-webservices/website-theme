@@ -1,21 +1,31 @@
 /*header top*/
 header {
-    &.landing-page {
-      padding:0;
-    }
+  &.landing-page {
+    padding:0;
   }
-  .header-top {
-    background-color:$black;
-    p {
-      margin:0;
-    }
+}
+.header-top {
+  background-color:$black;
+  p {
+    margin:0;
   }
-  .region-header-top {
-      background:$black;
-      color:$white;
-      text-align:right;
-      a {
-          color:$white;
-          padding:0 1em;
-      } 
-  }
+}
+.region-header-top {
+    background:$black;
+    color:$white;
+    text-align:right;
+    a {
+        color:$white;
+        padding:0 1em;
+    } 
+}
+.section-divider {
+  background-color:$white;
+  border-top:$standard-margin*2 solid $grey--95;      
+  .arrow-down {
+    border-top: 30px solid $grey--95;
+  }        
+}
+.section-even {
+  background-color:$grey--95; 
+}

@@ -1,0 +1,9 @@
+/*Landing page styles*/
+.landing-page {
+    h3 {
+        @include clearfixtext;
+    }
+    .col-md-6 {
+        padding-left:0;
+    }
+}

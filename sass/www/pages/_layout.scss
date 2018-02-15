@@ -25,10 +25,29 @@
 
 .page-overview {
   background-color:$grey--95;
+  .container {
+    padding-bottom:2*$standard-margin;
+  }
+}
+.document-links-section { 
+  background-color:$grey--80;
+  .container {
+    padding-top:2*$standard-margin;
+    padding-bottom:2*$standard-margin;
+  }
+}
+.node-type-news-article {
+  .section-divider {
+    border-top:$standard-margin*2 solid $grey--80;    
+    .arrow-down{
+      border-top: 30px solid $grey--80;
+    } 
+  }
+  
 }
   
 .section-divider {
-  border-top:1px solid $grey--80;
+  @include clearfixtext;
 }
 .full-width {
   width: 100vw;

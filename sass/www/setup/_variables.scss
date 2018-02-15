@@ -23,6 +23,26 @@ $grey--95: mix($white, $black, 95) !default;
 // =========================================================
 $standard-margin: 15px;
 
+@mixin even(){
+    &:nth-child(even) {
+      @content;
+    }
+  }
+  @mixin odd(){
+    &:nth-child(odd) {
+      @content;
+    }
+  }
+  @mixin first-child() {
+    &:first-of-type {
+      @content;
+    }
+  }
+  @mixin last-child() {
+    &:last-of-type {
+      @content;
+    }
+  }
 // =========================================================
 // TYPOGRAPHY
 // =========================================================
