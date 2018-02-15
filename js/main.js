@@ -1,6 +1,6 @@
 jQuery(document).ready(function($){
 	// open the panel
-	$('.panel-btn').click(function(event){
+	/*$('.panel-btn').click(function(event){
 		event.preventDefault();
 		$('.panel').addClass('is-visible');
 		$("#email").focus();
@@ -23,12 +23,12 @@ jQuery(document).ready(function($){
 			$('.panel-home-help').removeClass('is-visible');
 			event.preventDefault();
 		}
-	});
-
+  });
+  
 
     // Help slide gesture
       var panels = $('.panel');
-      panels.map((index, panel) => {
+      panels.map((index, panel)) => {
         var panelContainer = $(panel).find('.panel-container');
         var panelHeader = $(panel).find('.panel-header');
 	var originX = 0;
@@ -67,5 +67,9 @@ jQuery(document).ready(function($){
             }
           }
 	});
-      });
+      });*/
+
+      $( ".field-name-field-dva-form .content" ).addClass( "uikit-btn" );
+      $('a[href$=".pdf"]').attr('target', '_blank'); 
+      $('a[href$=".doc"]').attr('target', '_blank');
 });
