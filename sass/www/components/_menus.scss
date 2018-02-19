@@ -32,3 +32,12 @@ ul {
         }
     }
 }
+
+.sf-menu.menu, .sf-menu.menu ul, .sf-menu.menu li {
+    margin: 0;
+    background-color: green;
+}
+.sf-menu-aided-navigation ul.sf-has-clone-parent {
+    top: 0em !important;
+    height: 100%;
+}

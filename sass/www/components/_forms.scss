@@ -36,5 +36,26 @@
 }
 
 input[type=text].search-box-width{
-    width:45%;
+    width: 45%;
+    float: right;
+    position: relative;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    border: none;
+    margin: 0;
+}
+
+div#block-search-api-page-default-search {
+    // height: 50px;
+    width: 60%;
+    float: right;
+    margin-top:15px;
+}
+.form-submit-btn{
+    position: absolute;
+    /* left: 37%; */
+    // left: 254px;
+    right: 0px;
+    top: 0;
+    bottom: 0;
 }

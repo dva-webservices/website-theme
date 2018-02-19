@@ -1,8 +1,6 @@
 jQuery(document).ready(function($){
-<<<<<<< HEAD
 	// open the panel
 	/*$('.panel-btn').click(function(event){
-=======
   //add UIkit page alert classes to Drupal system messages
   $('.messages').addClass('uikit-page-alerts');
   $('.messages--warning').addClass('uikit-page-alerts--warning');
@@ -25,9 +23,9 @@ jQuery(document).ready(function($){
       });
   });*/
 
+
   // open the panel
 	$('.panel-btn').click(function(event){
->>>>>>> 4bb889669d4ce739317245d6d07eff32a02110b5
 		event.preventDefault();
 		$('.panel').addClass('is-visible');
 		$("#email").focus();
@@ -50,9 +48,10 @@ jQuery(document).ready(function($){
 			$('.panel-home-help').removeClass('is-visible');
 			event.preventDefault();
 		}
-<<<<<<< HEAD
   });
   
+  
+
 
     // Help slide gesture
       var panels = $('.panel');
@@ -68,7 +67,6 @@ jQuery(document).ready(function($){
             dragging = true;
             originX = event.screenX || event.targetTouches[0].screenX;
             lastX = originX;
-=======
 	});
 
 // open the panel
@@ -132,39 +130,14 @@ var dragging = false;
                 $(panel).removeClass('swipe-closing');
                 uiBunch.css({right: ''});
               }, 400);
->>>>>>> 4bb889669d4ce739317245d6d07eff32a02110b5
           }
           else {
             uiBunch.css({right: '0px', transition: 'right 0.3s'});
             window.setTimeout(() => {uiBunch.css({transition: ''});}, 300);
           }
-<<<<<<< HEAD
-	});
-        uiBunch.on('mouseup touchend', (event) => {
-          if (dragging && !$(event.target).is('.panel-close')) {
-            dragging = false;
-            var newX = (event.screenX || lastX) - originX;
-            if (newX > (panelContainer[0].offsetWidth * 0.25)) {
-                $(panel).removeClass('is-visible').addClass('swipe-closing');
-                window.setTimeout(function() {
-                  $(panel).removeClass('swipe-closing');
-                  uiBunch.css({right: ''});
-                }, 400);
-            }
-            else {
-              uiBunch.css({right: '0px', transition: 'right 0.3s'});
-              window.setTimeout(() => {uiBunch.css({transition: ''});}, 300);
-            }
-          }
-	});
-      });*/
-
-      $( ".field-name-field-dva-form .content" ).addClass( "uikit-btn" );
-      $('a[href$=".pdf"]').attr('target', '_blank'); 
-      $('a[href$=".doc"]').attr('target', '_blank');
-=======
         }
->>>>>>> 4bb889669d4ce739317245d6d07eff32a02110b5
 });
     });*/
+    
 });
+
