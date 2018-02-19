@@ -1,5 +1,5 @@
 /*hide breadcrumbs and title on homepage*/
-.page-node-12 {
+.front{
   h1.page__title {
     position:absolute;
     top:-10000px;
@@ -15,7 +15,7 @@
 
 .banner-text {
   position:absolute;
-  max-width:60%
+  max-width:40%;
 }
 .banner-image {
   height:400px;
@@ -28,7 +28,6 @@ img {
   /*what DVA does block*/
   .what-dva-does {
     padding:$standard-margin*2;
-    margin-top:50px;
   }
   .crest {
     text-align:right;
