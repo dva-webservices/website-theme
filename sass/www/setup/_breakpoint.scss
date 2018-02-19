@@ -1,0 +1,34 @@
+@mixin custom_breakpoint($prop_1, $value_1, $prop_2: NULL, $value_2: NULL) {
+    @if $prop_2==NULL {
+      @media ($prop_1 : $value_1) {
+        @content;
+      }
+    }
+    @else {
+      @media ($prop_1 : $value_1) and ($prop_2 : $value_2) {
+        @content;
+      }
+    }
+  }
+  
+  @mixin breakpoint($class) {
+    @if $class==desktop {
+      @media (min-width: $breakpoint_desktop) {
+        @content;
+      }
+    }
+    @else if $class==tablet {
+      @media (min-width: $breakpoint_tablet) {
+        @content;
+      }
+    }
+    @else if $class==mobile_only {
+      @media (max-width: ($breakpoint_tablet - 1)) {
+        @content;
+      }
+    }
+    @else {
+      @warn "Breakpoint mixin supports: desktop, tablet, mobile_only";
+    }
+  }
+  
