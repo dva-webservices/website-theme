@@ -28,8 +28,8 @@ jQuery(document).ready(function($){
       });
   });*/
 
-  // open the panel
-	$('.panel-btn').click(function(event){
+	// open the panel
+	/*$('.panel-btn').click(function(event){
 		event.preventDefault();
 		$('.panel').addClass('is-visible');
 		$("#email").focus();
@@ -52,6 +52,23 @@ jQuery(document).ready(function($){
 			$('.panel-home-help').removeClass('is-visible');
 			event.preventDefault();
 		}
+  });
+  
+
+    // Help slide gesture
+      var panels = $('.panel');
+      panels.map((index, panel)) => {
+        var panelContainer = $(panel).find('.panel-container');
+        var panelHeader = $(panel).find('.panel-header');
+	var originX = 0;
+        var lastX = 0;
+	var dragging = false;
+        var uiBunch = panelContainer.add(panelHeader);
+        uiBunch.on('mousedown touchstart', (event) => {
+          if (!dragging && !$(event.target).is('.panel-close')) {
+            dragging = true;
+            originX = event.screenX || event.targetTouches[0].screenX;
+            lastX = originX;
 	});
 
 // open the panel
@@ -121,6 +138,28 @@ var dragging = false;
             window.setTimeout(() => {uiBunch.css({transition: ''});}, 300);
           }
         }
-});
-    });*/
+	});
+        uiBunch.on('mouseup touchend', (event) => {
+          if (dragging && !$(event.target).is('.panel-close')) {
+            dragging = false;
+            var newX = (event.screenX || lastX) - originX;
+            if (newX > (panelContainer[0].offsetWidth * 0.25)) {
+                $(panel).removeClass('is-visible').addClass('swipe-closing');
+                window.setTimeout(function() {
+                  $(panel).removeClass('swipe-closing');
+                  uiBunch.css({right: ''});
+                }, 400);
+            }
+            else {
+              uiBunch.css({right: '0px', transition: 'right 0.3s'});
+              window.setTimeout(() => {uiBunch.css({transition: ''});}, 300);
+            }
+          }
+	});
+      });*/
+
+      $( ".field-name-field-dva-form .content" ).addClass( "uikit-btn" );
+      $('a[href$=".pdf"]').attr('target', '_blank'); 
+      $('a[href$=".doc"]').attr('target', '_blank');
+        
 });
