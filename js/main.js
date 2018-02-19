@@ -1,4 +1,5 @@
 jQuery(document).ready(function($){
+
   //add UIkit page alert classes to Drupal system messages
   $('.messages').addClass('uikit-page-alerts');
   $('.messages--warning').addClass('uikit-page-alerts--warning');
@@ -30,6 +31,7 @@ jQuery(document).ready(function($){
 
 	// open the panel
 	/*$('.panel-btn').click(function(event){
+
 		event.preventDefault();
 		$('.panel').addClass('is-visible');
 		$("#email").focus();
@@ -132,12 +134,15 @@ var dragging = false;
                 $(panel).removeClass('swipe-closing');
                 uiBunch.css({right: ''});
               }, 400);
+
           }
           else {
             uiBunch.css({right: '0px', transition: 'right 0.3s'});
             window.setTimeout(() => {uiBunch.css({transition: ''});}, 300);
           }
+
         }
+
 	});
         uiBunch.on('mouseup touchend', (event) => {
           if (dragging && !$(event.target).is('.panel-close')) {
@@ -161,5 +166,5 @@ var dragging = false;
       $( ".field-name-field-dva-form .content" ).addClass( "uikit-btn" );
       $('a[href$=".pdf"]').attr('target', '_blank'); 
       $('a[href$=".doc"]').attr('target', '_blank');
-        
+
 });
