@@ -16,6 +16,9 @@
 
 
 /*region backgrounds*/
+#content{
+  padding-bottom:2*$standard-margin;
+}
 .navigation {
   background-color:$grey--80;
 }

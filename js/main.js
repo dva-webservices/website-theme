@@ -7,8 +7,15 @@ jQuery(document).ready(function($){
   $('.messages--error').addClass('uikit-page-alerts--error');
   $('.messages--status').addClass('uikit-page-alerts--info');
   $('<div class="section-divider full-width"><div class="arrow-down"></div></div>').insertAfter('.document-links-section');
-  $('.node-type-news-article .field-name-field-documents').addclass('col-md-6');
-  $('.node-type-news-article .field-name-field-related-content').addclass('col-md-6');
+  $('.form-submit').addClass('uikit-btn');
+  
+  //news
+  $('#block-views-latest-news-block-1').addClass('container-with-gradient');
+
+  $('.home-news-listing .view-content').addClass('col-md-6');
+  $('.news-listing .views-row-first').wrap('<div class="first-news-item full-width"><div class="container"></div></div>');
+  $('.section-news-media .views-row-first').wrap('<div class="first-news-item full-width"><div class="container"></div></div>');
+  $('.news-categories ul').prepend('<li><a href="/news-media/news">All news</a></li>');
   //show hide death related field when relevant
   /*$('#edit-field-cause-of-death-value-wrapper').hide();
   $(function() {

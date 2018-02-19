@@ -32,3 +32,6 @@
 ul {
     max-width:none;
 }
+input[type=text], input[type=name], input[type=date], input[type=tel], input[type=email], input[type=number], input[type=phone], input[type=password], input[type=url], input[type=search], textarea, select, .typeahead {
+    max-width:none;
+}
