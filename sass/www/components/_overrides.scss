@@ -2,6 +2,16 @@
     p {
         max-width:none;
     }
+    .uikit-btn, a.uikit-btn{
+        color:$white;
+        padding:.4em .8em;
+      }
+      .uikit-btn.uikit-btn--tertiary {
+        color:$black;
+      } 
+      .uikit-btn.uikit-btn--tertiary:hover {
+        color:$white;
+      }
 }
 
 .uikit-grid {
@@ -13,9 +23,7 @@
 .uikit-page-alerts {
     max-width:none;
 }
-.uikit-btn {
-    padding:.4em .8em;
-}
+
 .uikit-footer {
     padding:0;
 }
@@ -34,4 +42,48 @@ ul {
 }
 input[type=text], input[type=name], input[type=date], input[type=tel], input[type=email], input[type=number], input[type=phone], input[type=password], input[type=url], input[type=search], textarea, select, .typeahead {
     max-width:none;
+}
+
+.region-header-top .uikit-body .uikit-accordion__title, .region-header-top .uikit-accordion__title {
+    color:$white !important;
+    padding:0 70px 0 0 ;
+    border:none !important;
+    background:none !important;
+    display:inline-block !important;
+    font-size:1em important;
+    font-weight:normal;
+    &:after {
+        right:2.7em;
+        background-image: url("/sites/all/themes/custom/dva/images/arrow-white.svg");
+        background-position: 0.30px;
+       background-repeat: no-repeat;
+    }
+}
+.region-header-top .uikit-accordion__body-wrapper {
+border:none;
+}
+.trial-message {
+    color:$white;
+    display:inline-block;
+}
+
+.uikit-accordion {
+
+    border:none;
+    margin-bottom:0;
+}
+header.landing-page img {
+   border:none; 
+}
+.accordion-toppanel--wrapper .uikit-accordion.accordion-open .uikit-accordion__body {
+max-height:300px;
+}
+.support-box .facebook {
+    width:15px;
+}
+.region-header-top .panel, .region-header-top .panel a, .region-header-top .panel button.panel-close {
+    color:$black;
+}
+header.landing-page .uikit-accordion img {
+float:none;
 }
