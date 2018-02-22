@@ -33,11 +33,44 @@ ul {
     }
 }
 
-.sf-menu.menu, .sf-menu.menu ul, .sf-menu.menu li {
-    margin: 0;
-    background-color: green;
+ul.sf-menu-aided-navigation {
+    float: left;
+    background-color: grey;
+    text-align: center;
+    width:100%;
+    /* margin-bottom: 10px !important; */
 }
 .sf-menu-aided-navigation ul.sf-has-clone-parent {
     top: 0em !important;
     height: 100%;
+}
+.sf-menu-aided-navigation .col-sm-3 {
+    border: solid 1px #fff;
+    min-height: 200px;
+    margin: 5px !important;
+    width: 23%;
+    /* margin: 0 auto; */
+}
+.sf-menu-aided-navigation a.sf-depth-1.menuparent.toc-filter-processed.sf-with-ul, 
+.sf-menu-aided-navigation a.sf-depth-1.menuparent.sf-with-ul, 
+.sf-menu-aided-navigation a.sf-depth-1 {
+    width: 15em !important;
+    min-height: 200px;
+    border: solid 1px #fff !important;
+    padding: 15px !important;
+    margin: 15px 5px;
+}
+.sf-menu-aided-navigation .sf-depth-2 {
+    width: 15em !important;
+    height: 200px;
+    background-color: grey;
+    border: solid 1pxf #fff;
+}
+.sf-menu-aided-navigation-new{
+    width: 100% !important;
+    background-color: grey !important;
+    height: 100%;
+    top: 0em !important;
+    left: 0em !important;
+    transition: 1s;
 }
