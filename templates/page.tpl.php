@@ -6,6 +6,7 @@
   <noscript><p role="alert">This website needs JavaScript to work properly.</p></noscript>
   <nav class="uikit-skip-link"><a class="uikit-skip-link__link" href="#content">Skip to main content</a></nav>
   <header class="uikit-header landing-page">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   <div class="container-fluid header-top">
        <div class="container">
   
@@ -17,7 +18,7 @@
     	<?php if ($logo): ?>
         	<a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="header__logo" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" class="header__logo-image" /></a>
   	<?php endif; ?>  
-        <h1>Department of Veterans Affairs <sup class="beta large">Beta</sup></h1>
+        <sup class="beta large">Beta</sup>
 		
 	   
 	   
@@ -31,7 +32,8 @@
  <input placeholder="Enter your keywords" type="text" id="edit-keys-1" name="keys_1" value="" size="15" maxlength="128" class="form-text">
 </div>
 <input type="hidden" name="id" value="1">
-<input type="submit" id="edit-submit-1" name="op" value="Search" class="form-submit"><input type="hidden" name="form_build_id" value="form-5Hc_K8xxQn9sNT4IIgIt6gD1GqOymE1oLTF7vr_60jc">
+<button type="submit" id="edit-submit-1" name="op" value="Search" class="uikit-btn form-submit-btn"><i class="fas fa-search"></i></button>
+<input type="hidden" name="form_build_id" value="form-5Hc_K8xxQn9sNT4IIgIt6gD1GqOymE1oLTF7vr_60jc">
 <input type="hidden" name="form_id" value="search_api_page_search_form_default_search">
 </div></form>
 </div>
