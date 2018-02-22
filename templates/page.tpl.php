@@ -8,6 +8,7 @@
   <header class="uikit-header landing-page">
   <div class="container-fluid header-top">
        <div class="container">
+  
          <?php print render($page['header_top']); ?>
        </div>
   </div>
@@ -17,6 +18,25 @@
         	<a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="header__logo" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" class="header__logo-image" /></a>
   	<?php endif; ?>  
         <h1>Department of Veterans Affairs <sup class="beta large">Beta</sup></h1>
+		
+	   
+	   
+	   <div id="block-search-api-page-default-search" class="block block-search-api-page contextual-links-region last odd">
+
+      <div class="contextual-links-wrapper contextual-links-processed"><a class="contextual-links-trigger toc-filter-processed contextual-links-trigger-active" href="#">Configure</a><ul class="contextual-links"><li class="search-api-page-edit first"><a href="/admin/config/search/search_api/page/default_search/edit?destination=node/12">Edit search page</a></li>
+<li class="block-configure last"><a href="/admin/structure/block/manage/search_api_page/default_search/configure?destination=node/12">Configure block</a></li>
+</ul></div>
+  <form class="search-form-widget" action="/" method="post" id="search-api-page-search-form-default-search" accept-charset="UTF-8"><div><div class="form-item form-type-textfield form-item-keys-1">
+  <label class="element-invisible" for="edit-keys-1">Enter your keywords </label>
+ <input placeholder="Enter your keywords" type="text" id="edit-keys-1" name="keys_1" value="" size="15" maxlength="128" class="form-text">
+</div>
+<input type="hidden" name="id" value="1">
+<input type="submit" id="edit-submit-1" name="op" value="Search" class="form-submit"><input type="hidden" name="form_build_id" value="form-5Hc_K8xxQn9sNT4IIgIt6gD1GqOymE1oLTF7vr_60jc">
+<input type="hidden" name="form_id" value="search_api_page_search_form_default_search">
+</div></form>
+</div>
+		
+	
     </div>
       <div class="container-fluid navigation">
       <div class="container">
