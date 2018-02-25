@@ -64,13 +64,31 @@ ul.sf-menu-aided-navigation {
     width: 15em !important;
     height: 200px;
     background-color: grey;
-    border: solid 1pxf #fff;
+    border: solid 1px #fff;
 }
 .sf-menu-aided-navigation-new{
     width: 100% !important;
     background-color: grey !important;
     height: 100%;
     top: 0em !important;
-    left: 0em !important;
-    transition: 1s;
+    // left: 0em !important;
+    // z-index: 500;
+    // transform: translate(0,0);
+    // -webkit-transform: translate(0,0); /** Safari & Chrome **/
+    // -o-transform: translate(0,0); /** Opera **/
+    // -moz-transform: translate(0,0); /** Firefox **/
 }
+// .sf-menu-aided-navigation-object{
+//     position: absolute;
+//     transition: all 1s ease-in-out;
+//     -webkit-transition: all 1s ease-in-out; /** Chrome & Safari **/
+//     -moz-transition: all 1s ease-in-out; /** Firefox **/
+//     -o-transition: all 1s ease-in-out; /** Opera **/
+// }
+// // .sf-menu-aided-navigation .sf-hidden{
+// //     top:0em !important;
+// //     left:-100em !important;
+// // }
+// .sf-menu li.sfHover > ul{
+//     left:50em;
+// }
