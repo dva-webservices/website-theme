@@ -108,4 +108,15 @@ a {
 }
 
 }
+.display_none {
+  display:none;
+}
+sup.beta {
+  background:$black;
+  color:$white;
+  font-size:1.5em;
+  top:.6em;
+  padding:0px 10px 5px;
+  border-radius:10px;
+}
 

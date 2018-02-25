@@ -9,7 +9,7 @@
 .news-date {
     position:absolute;
     text-align:center;
-    margin-top:20px;
+    margin-top:15px;
     .date-num {
         font-size:3em;
         line-height:0.7;
@@ -28,7 +28,11 @@
     }
     li {
         display:inline-block;
+        &:first-child{
+            margin-right:5px;
+        }
     }
+    
     a {
         padding:5px 10px;
         background-color:$white;
@@ -68,7 +72,7 @@
         }
     }
 
-    .first-news-item {
+    .first-news-item, .views-row-first {
         background-color:$grey--80;
         padding-top:2*$standard-margin;
         padding-bottom:2*$standard-margin;
