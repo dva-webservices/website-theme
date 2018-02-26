@@ -54,41 +54,37 @@ ul.sf-menu-aided-navigation {
 .sf-menu-aided-navigation a.sf-depth-1.menuparent.toc-filter-processed.sf-with-ul, 
 .sf-menu-aided-navigation a.sf-depth-1.menuparent.sf-with-ul, 
 .sf-menu-aided-navigation a.sf-depth-1 {
-    width: 15em !important;
+    width: 25em !important;
     min-height: 200px;
-    border: solid 1px #fff !important;
+    border: solid 3px #fff !important;
     padding: 15px !important;
     margin: 15px 5px;
 }
-.sf-menu-aided-navigation .sf-depth-2 {
-    width: 15em !important;
-    height: 200px;
-    background-color: grey;
-    border: solid 1px #fff;
+.sf-menu-aided-navigation a.sf-depth-2{
+    width:25em !important;
+    min-height:200px;
+    padding: 15px !important;
+    margin: 15px 5px;
+    border: solid 3px #fff !important;
 }
 .sf-menu-aided-navigation-new{
     width: 100% !important;
     background-color: grey !important;
     height: 100%;
     top: 0em !important;
-    // left: 0em !important;
-    // z-index: 500;
-    // transform: translate(0,0);
-    // -webkit-transform: translate(0,0); /** Safari & Chrome **/
-    // -o-transform: translate(0,0); /** Opera **/
-    // -moz-transform: translate(0,0); /** Firefox **/
 }
-// .sf-menu-aided-navigation-object{
-//     position: absolute;
-//     transition: all 1s ease-in-out;
-//     -webkit-transition: all 1s ease-in-out; /** Chrome & Safari **/
-//     -moz-transition: all 1s ease-in-out; /** Firefox **/
-//     -o-transition: all 1s ease-in-out; /** Opera **/
-// }
-// // .sf-menu-aided-navigation .sf-hidden{
-// //     top:0em !important;
-// //     left:-100em !important;
-// // }
-// .sf-menu li.sfHover > ul{
-//     left:50em;
-// }
+
+#block-superfish-3 h2.block__title.block-title {
+    background: grey;
+    margin: 0;
+}
+.sf-menu-aided-navigation .sf-depth-1, .sf-menu-aided-navigation .sf-depth-2 {
+    width: 21%;
+    float: none;
+}
+.sf-menu-aided-navigation ul.menu li a{
+    border-bottom:solid 3px #fff;
+}
+.sf-menu-aided-navigation a.sf-depth-1:hover {
+    background: rgba(22, 155, 213, 1) !important;
+}
