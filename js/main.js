@@ -9,9 +9,10 @@ jQuery(document).ready(function($){
   $('.form-submit').addClass('uikit-btn');
   
   //news
-  $('#block-views-latest-news-block-1').addClass('container-with-gradient');
-  $('.home-news-listing .view-content').addClass('col-md-6');
   $('.news-categories .view-header li').insertBefore('.news-categories ul>li:first');
+  $('.views-row.tags').removeClass('col-md-6');
+  $('.views-row-1.tags').addClass('full-width');
+  $('.views-row-1.tags').wrapInner('<div class="container"></div>');
 
 
 });
