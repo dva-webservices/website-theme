@@ -70,7 +70,7 @@ stylesheets[all][] = css/animate.css
 ; Optionally add some JavaScripts to your theme.
 
 scripts[] = js/main.js
-scripts[] = js/dvaform.js
+scripts[] = js/dva-aided-nav.js
 
 
 
