@@ -12,7 +12,19 @@ jQuery(document).ready(function($){
   $('#block-views-latest-news-block-1').addClass('container-with-gradient');
   $('.home-news-listing .view-content').addClass('col-md-6');
   $('.news-categories .view-header li').insertBefore('.news-categories ul>li:first');
-
+  //show hide death related field when relevant
+  /*$('#edit-field-cause-of-death-value-wrapper').hide();
+  $(function() {
+      $("#edit-field-circumstances-value").change(function() {
+          if(this.value === "spouse_partner_deceased" || this.value === "child_member_deceased" ) {
+  
+          $('#edit-field-cause-of-death-value-wrapper').show();
+          }
+          else{
+               $('#edit-field-cause-of-death-value-wrapper').hide();
+          }
+      });
+  });*/
 
 });
 
