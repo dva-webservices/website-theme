@@ -1,24 +1,46 @@
-/*Main menu*/
-#block-superfish-1 {
-    clear:both;
-    ul.menu {
-        float:none;
-        background-color: $grey--85 !important;
-        width: 100%;
-    }
-    .first {
-        a {
-            background-image: url("../images/icon-home.png");
-            background-size: 100% auto;
-            background-repeat:no-repeat;
-            background-position:0 5px;
-            text-indent:1000px;
-            width:1px !important;
-            overflow:hidden;
+/*- PRIMARY NAVIGATION - */
+
+.navigation{
+    background: $grey--10!important;
+}
+.region-navigation ul#superfish-1 li a{
+    color:$grey--85 !important;
+}
+
+.region-navigation{
+    #block-superfish-1 {
+        clear:both;
+        ul.menu {
+            float:none;
+            background-color: $grey--10 !important;
+            border-top:1px solid $grey--20;
+            width: 100%;        
+        }
+        li{
+            a{
+                font-size:0.9em;            
+                border-bottom:3px solid transparent !important;
+                margin:0 0 -1px 0 !important;       
+            }
+            a:hover{
+                color:$white !important;
+                border-color:$mid-blue !important;
+            }
+        }
+        .first {
+            min-width:25px;
+            a {
+                background-image: url("../images/icon-home.png");
+                background-size: 80% auto;
+                background-repeat:no-repeat;
+                background-position:3px 10px;
+                text-indent:1000px;
+                width:1px !important;
+                overflow:hidden;
+            }
         }
     }
 }
-
 .group-right-column  {
     padding-left:30px;
 }
@@ -32,6 +54,8 @@ ul {
         }
     }
 }
+
+/* aided navigation */
 
 ul.sf-menu-aided-navigation {
     float: left;

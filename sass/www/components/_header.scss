@@ -1,26 +1,59 @@
-/*header top*/
+
+/* - HEADER TOP - */
 header {
   &.landing-page {
     padding:0;
   }
 }
+.container-fluid .header-top{
+  border-bottom:1px solid $grey--90;
+}
+
 .header-top {
   background-color:$black;
   p {
     margin:0;
   }
 }
+.topbar-controls .uikit-accordion__title{
+  margin-right: 4em;
+}
+.topbar-controls a{
+  padding:1.2em 2.25em 0.5em 0.5em;
+}
+
 .region-header-top {
-    background:$black;
-    color:$white;
-    /*text-align:right;*/
-    padding-top:5px;
-    padding-bottom:5px;
+  background:$black;
+  color:$white;
+  /*text-align:right;*/  
     a {
         color:$white;
+        border-color:$white;
         /*padding:0 1em;*/
     } 
-}
+    a:hover{
+      background:$white;
+      color:$black !important;
+      transition: none;
+    }
+    .support-box{
+      img{
+        margin-left:auto;
+        margin-right:auto;
+          @include breakpoint(tablet){
+            max-width:60%;
+            margin:0;
+        }
+      } 
+    img .facebook{
+      display: inline-block;
+      margin-top:10px;
+    }
+    }
+  }
+
+/* HEADER SECTON */
+
 .section-divider {
   background-color:$white;
   border-top:$standard-margin*2 solid $grey--95;      
