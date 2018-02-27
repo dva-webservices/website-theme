@@ -8,13 +8,11 @@
  */
 ?>
 
-<div class="view-sub-grouping full-width">
-<div class="container">
+<div class="view-sub-grouping col-md-4 col-sm-6">
 <?php if (!empty($title)): ?><h3><?php print $title; ?></h3><?php endif; ?>
 <?php foreach ($rows as $id => $row): ?>
   <div<?php if ($classes_array[$id]) { print ' class="' . $classes_array[$id] .'"';  } ?>>
     <?php print $row; ?>
   </div>
 <?php endforeach; ?>
-</div>
 </div>

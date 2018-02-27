@@ -29,23 +29,20 @@ jQuery(document).ready(function($){
     $(".uikit-accordion__body").toggleClass("is-visible");
 	});
 
-	$( ".myservice-login" ).on( "submit", function( event ) {
-		event.preventDefault();		
-		var str = JSON.stringify($( this).serialize());
-    console.log(str );
-	});
-
-	var arr = {email: "le.tong@dva.gov.au", password: "fdsaf"}
-$.ajax({
-    url: 'https://www.dva.gov.au/myservice/user.login',
-    type: 'POST',
-    data: JSON.stringify(arr),
-    contentType: 'application/json; charset=utf-8',
-    dataType: 'json',
-    async: false,
-    success: function(msg) {
-        alert(msg);
-    }
+// 	$(".login").keyup(function(){
+//     alert("clicked");
+// });
+// 	var arr = {email: "le.tong@dva.gov.au", password: "fdsaf"}
+// $.ajax({
+//     url: 'https://www.dva.gov.au/myservice/user.login',
+//     type: 'POST',
+//     data: JSON.stringify(arr),
+//     contentType: 'application/json; charset=utf-8',
+//     dataType: 'json',
+//     async: false,
+//     success: function(msg) {
+//         alert(msg);
+//     }
 });
 
    /* // Mobile navigation menu

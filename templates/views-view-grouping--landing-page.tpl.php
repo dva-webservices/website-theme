@@ -20,7 +20,7 @@
 
 <div class="view-grouping full-width">
   <div class="container"><div class="view-grouping-header"><h2><?php print $title; ?></h2></div></div>
-  <div class="view-grouping-content">
+  <div class="view-grouping-content container">
     <?php print $content; ?>
   </div>
   <div class="section-divider full-width"><div class="arrow-down"></div></div>
