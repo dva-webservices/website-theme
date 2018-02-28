@@ -43,12 +43,12 @@ header {
           @include breakpoint(tablet){
             max-width:60%;
             margin:0;
+
+        }
+        &.facebook {
+          margin-top:6px;
         }
       } 
-    img .facebook{
-      display: inline-block;
-      margin-top:10px;
-    }
     }
   }
 

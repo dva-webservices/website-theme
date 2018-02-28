@@ -30,13 +30,20 @@
         .first {
             min-width:25px;
             a {
-                background-image: url("../images/icon-home.png");
+               /* background-image: url("../images/icon-home.png");
                 background-size: 80% auto;
                 background-repeat:no-repeat;
                 background-position:3px 10px;
-                text-indent:1000px;
-                width:1px !important;
+                text-indent:1000px;*/
+                width:40px !important;
+                height:38px;
                 overflow:hidden;
+                
+            }
+            .svg-inline--fa {
+                height:2em !important;
+                width:25px;
+                margin-top:3px;
             }
         }
     }

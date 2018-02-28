@@ -13,6 +13,8 @@ jQuery(document).ready(function($){
   $('.views-row.tags').removeClass('col-md-6');
   $('.views-row-1.tags').addClass('full-width');
   $('.views-row-1.tags').wrapInner('<div class="container"></div>');
+  //main menu
+  $('.region-navigation #block-superfish-1 .first a').prepend('<i class="fas fa-home"></i>');
 
 
 });
