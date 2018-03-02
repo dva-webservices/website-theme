@@ -7,3 +7,34 @@
 .node-type-form .file-icon{
     display:none;
 }
+/* AZ TEMP */
+
+.uikit-body .uikit-btn, .uikit-body a.uikit-btn{
+    background:$dark-grey-blue;
+    border:1px solid $dark-grey-blue;
+    border-radius:0;
+    color:$white!important;
+}
+.uikit-body .uikit-btn, .uikit-body a.uikit-btn:hover{
+    background:transparent;
+    border-radius:0;
+    border:1px solid $dark-grey-blue;
+    color:$dark-grey-blue!important;
+}
+
+.view-banner-promotions .transparent-bg a,
+.views-submit-button input,
+.views-reset-button input{
+    background:transparent;
+    border-radius:0;
+    border:1px solid $dark-grey-blue;
+    color:$dark-grey-blue!important;
+}
+.view-banner-promotions .transparent-bg a:hover,
+.views-submit-button input:hover,
+.views-reset-button input:hover{
+    background:$dark-grey-blue;
+    border:1px solid $dark-grey-blue;
+    color:$white!important;
+}
+

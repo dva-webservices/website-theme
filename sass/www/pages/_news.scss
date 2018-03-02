@@ -6,6 +6,16 @@
     padding-top:2*$standard-margin;
     padding-bottom:2*$standard-margin;
 }*/
+
+/* AZ TEMP STUFF */
+.view-latest-news .view-header h2 a{
+    color:$white;
+}
+.first-news-item, .first-news-item .news-title a{
+    color:$white;
+}
+
+
 .news-date {
     position:absolute;
     text-align:center;
@@ -68,8 +78,16 @@
         }
         a {
             padding:5px 10px;
-            background-color:$black;
+            background-color:$dark-grey-blue;
             color:$white;
+            border: 1px solid $white;
+            font-size:0.8em;
+        }
+        a:hover, a:focus {
+            padding:5px 10px;
+            background-color:$white;
+            color:$dark-grey-blue;
+            border: 1px solid $dark-grey-blue;
         }
     }
     .tags {
@@ -82,7 +100,7 @@
     }
 
     .first-news-item, .views-row-first {
-        background-color:$grey--80;
+        background-color:$blue-grey;
         padding-top:2*$standard-margin;
         padding-bottom:2*$standard-margin;
         .news-title, .summary, .taxonomy {
