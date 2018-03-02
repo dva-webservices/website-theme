@@ -4,7 +4,8 @@
     color: red;
     border: solid 1px black;
 }*/
-.node-type-form .file-icon{
+.node-type-form {
+    .file-icon{
     display:none;
 }
 /* AZ TEMP */
@@ -37,4 +38,3 @@
     border:1px solid $dark-grey-blue;
     color:$white!important;
 }
-

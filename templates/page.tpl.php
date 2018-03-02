@@ -24,9 +24,9 @@
 	   
 	   <div id="block-search-api-page-default-search" class="block block-search-api-page contextual-links-region last odd">
 
-      <div class="contextual-links-wrapper contextual-links-processed"><a class="contextual-links-trigger toc-filter-processed contextual-links-trigger-active" href="#">Configure</a><ul class="contextual-links"><li class="search-api-page-edit first"><a href="/admin/config/search/search_api/page/default_search/edit?destination=node/12">Edit search page</a></li>
+      <!--div class="contextual-links-wrapper contextual-links-processed"><a class="contextual-links-trigger toc-filter-processed contextual-links-trigger-active" href="#">Configure</a><ul class="contextual-links"><li class="search-api-page-edit first"><a href="/admin/config/search/search_api/page/default_search/edit?destination=node/12">Edit search page</a></li>
 <li class="block-configure last"><a href="/admin/structure/block/manage/search_api_page/default_search/configure?destination=node/12">Configure block</a></li>
-</ul></div>
+</ul></div-->
   <form class="search-form-widget" action="/" method="post" id="search-api-page-search-form-default-search" accept-charset="UTF-8"><div><div class="form-item form-type-textfield form-item-keys-1">
   <label class="element-invisible" for="edit-keys-1">Enter your keywords </label>
  <input placeholder="Enter your keywords" type="text" id="edit-keys-1" name="keys_1" value="" size="15" maxlength="128" class="form-text">
