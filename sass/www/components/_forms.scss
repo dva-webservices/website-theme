@@ -93,4 +93,16 @@ div#block-search-api-page-default-search{
     background-color:$dark-blue;
     border-color:$dark-blue;
   }
+  .block-webform {
+    padding-bottom:2*$standard-margin;
+    .form-actions {
+    margin-top:$standard-margin;
+    }
+    
+
+  }
+ 
+  .search-info {
+display:none;
   
+  }
