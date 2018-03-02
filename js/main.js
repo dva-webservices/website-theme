@@ -18,12 +18,12 @@ jQuery(document).ready(function($){
 
 
 //Open and close feedback panel
-$('.trial-message a').on('click', function(event){
+$('.trial-message a').click (function(event){
     event.preventDefault();
     $('.panel.from-right').addClass('is-visible');
 });
 // close the feedback panel
-$('.panel-feedback').on('click', function(event){
+$('.panel-feedback').click (function(event){
     if( $(event.target).is('.panel-feedback') || $(event.target).is('.panel-close') ) { 
         $('.panel-feedback').removeClass('is-visible');
         event.preventDefault();
