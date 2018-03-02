@@ -4,6 +4,17 @@
     color: red;
     border: solid 1px black;
 }*/
-.node-type-form .file-icon{
+.node-type-form {
+    .file-icon{
     display:none;
+    }
+    
+    .section-divider {
+        border-top:$standard-margin*2 solid $grey--80;    
+        .arrow-down{
+        border-top: 30px solid $grey--80;
+        } 
+    }
+        
+    
 }
