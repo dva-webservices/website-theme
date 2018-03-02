@@ -7,12 +7,19 @@
     padding-bottom:2*$standard-margin;
 }*/
 
-/* AZ TEMP STUFF */
-.view-latest-news .view-header h2 a{
+/* AZ TEMP */
+.view-latest-news .view-header h2 a,
+.views-row-1.tags a{
     color:$white;
 }
-.first-news-item, .first-news-item .news-title a{
+.first-news-item, .first-news-item .news-title a,
+.views-row-1.tags{
     color:$white;
+}
+
+.views-row h2{
+    margin-bottom: 0;
+    margin-top:0;
 }
 
 
