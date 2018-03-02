@@ -127,7 +127,7 @@ jQuery(document).ready(function($){
 			event.preventDefault();
 		}
 	});
-*/
+
 /*
     // Help slide gesture
       let panels = $('.panel');
