@@ -54,20 +54,20 @@
   @include clearfixtext;
 }
 .full-width {
-  width: 99vw;
+  width: 100vw;
   position: relative;
   left: 50%;
   right: 50%;
-  margin-left: -49.5vw;
-  margin-right: -49.5vw;
+  margin-left: -50vw;
+  margin-right: -50vw;
 }
 @mixin full-width {
-  width: 99vw;
+  width: 100vw;
   position: relative;
   left: 50%;
   right: 50%;
-  margin-left: -49.5vw;
-  margin-right: -49.5vw;
+  margin-left: -50vw;
+  margin-right: -50vw;
 }
 
 
