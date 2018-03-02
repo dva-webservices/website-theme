@@ -7,8 +7,6 @@
 // $medium-tablet: 960px;
 // =========================================================
 
-
-
 $breakpoint_desktop: 1280px;
 $breakpoint_tablet: 768px;
 
@@ -17,9 +15,13 @@ $breakpoint_tablet: 768px;
 // =========================================================
 $white: #ffffff;
 $black: #000000;
+$mid-blue: #3183b9;
+$dark-blue: #1a6698;
+
 
 $grey--10: mix($white, $black, 10) !default;
 $grey--20: mix($white, $black, 20) !default;
+$grey--25: mix($white, $black, 25) !default;
 $grey--30: mix($white, $black, 30) !default;
 $grey--40: mix($white, $black, 40) !default;
 $grey--50: mix($white, $black, 50) !default;
@@ -65,3 +67,9 @@ $base-font-size: 16px;
 @function em($px, $base: $base_font_size) {
   @return ($px / $base) * 1em;
 }
+
+
+// =========================================================
+// BUTTONS
+// =========================================================
+

@@ -38,6 +38,7 @@
     padding-top:2*$standard-margin;
     padding-bottom:2*$standard-margin;
   }
+  
 }
 .node-type-news-article {
   .section-divider {
@@ -53,6 +54,14 @@
   @include clearfixtext;
 }
 .full-width {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+@mixin full-width {
   width: 100vw;
   position: relative;
   left: 50%;

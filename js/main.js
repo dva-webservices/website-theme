@@ -9,22 +9,13 @@ jQuery(document).ready(function($){
   $('.form-submit').addClass('uikit-btn');
   
   //news
-  $('#block-views-latest-news-block-1').addClass('container-with-gradient');
-  $('.home-news-listing .view-content').addClass('col-md-6');
   $('.news-categories .view-header li').insertBefore('.news-categories ul>li:first');
-  //show hide death related field when relevant
-  /*$('#edit-field-cause-of-death-value-wrapper').hide();
-  $(function() {
-      $("#edit-field-circumstances-value").change(function() {
-          if(this.value === "spouse_partner_deceased" || this.value === "child_member_deceased" ) {
-  
-          $('#edit-field-cause-of-death-value-wrapper').show();
-          }
-          else{
-               $('#edit-field-cause-of-death-value-wrapper').hide();
-          }
-      });
-  });*/
+  $('.views-row.tags').removeClass('col-md-6');
+  $('.views-row-1.tags').addClass('full-width');
+  $('.views-row-1.tags').wrapInner('<div class="container"></div>');
+  //main menu
+  $('.region-navigation #block-superfish-1 .first a').prepend('<i class="fas fa-home"></i>');
+
 
 //Open and close feedback panel
 $('.trial-message a').on('click', function(event){

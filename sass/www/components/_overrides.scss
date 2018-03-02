@@ -87,3 +87,11 @@ max-height:300px;
 header.landing-page .uikit-accordion img {
 float:none;
 }
+
+/* Fixing the oversized beta applied in MyService */
+sup.beta{
+    background:$grey--20;
+    font-size:1em;
+    padding: 0 6px 3px;
+    border-radius: 5px;
+}
