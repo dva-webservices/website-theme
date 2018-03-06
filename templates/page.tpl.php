@@ -68,6 +68,7 @@
      <section>
   	<div id="main">
     	<div id="content" class="column" role="main">
+      <div class="container">
       		<a href="#skip-link" id="skip-content" class="element-invisible">Go to top of page</a>
             	<?php print render($title_suffix); ?>
       		<?php print $messages; ?>
@@ -76,6 +77,7 @@
      		<?php if ($action_links): ?>
        			<ul class="action-links"><?php print render($action_links); ?></ul>
       		<?php endif; ?>
+          </div>
       		<?php print render($page['content']); ?>
       		<?php print $feed_icons; ?>
     	</div>

@@ -64,6 +64,7 @@ div#block-search-api-page-default-search{
         padding:8px;
         border-radius: 0;
         font-size: 1em;
+        width:70%;
             @include breakpoint(tablet){
                 width:350px;
             } 

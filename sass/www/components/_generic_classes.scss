@@ -26,15 +26,15 @@
   }
   /* Row with equal height columns*/
   .row-eq-height {
+    @include breakpoint(tablet) {   
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display:         flex;
+    }
   }
   .transparent-bg {
     background:rgba(255,255,255,0.7);
-    padding:$standard-margin $standard-margin*2;
-    margin:$standard-margin*2;
   }
 .container-with-gradient {
   @include breakpoint(tablet) {   
