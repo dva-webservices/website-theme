@@ -1,12 +1,3 @@
-// jQuery(document).ready(function($){
-// 	    $('.sf-menu-aided-navigation .menuparent ').off('mouseover mouseenter mouseout mouseleave');
-//       $('.sf-menu-aided-navigation li').click(function(event) {
-// 				event.preventDefault();
-// 				$(this).children('ul').removeClass('sf-hidden').addClass('animated slideInRight sf-menu-aided-navigation-new sf-menu-aided-navigation-object');
-// })
-//     });
-
-
 /*
  * Superfish v1.4.8 - jQuery menu widget
  * Copyright (c) 2008 Joel Birch
@@ -99,13 +90,14 @@
 		menuClass   : 'sf-js-enabled',
 		anchorClass : 'sf-with-ul',
 		arrowClass  : 'sf-sub-indicator',
+		backClass		: 'fas fa-arrow-left',
 		shadowClass : 'sf-shadow'
 	};
 	sf.defaults = {
 		hoverClass	: 'sfHover',
 		pathClass	: 'overideThisToUse',
 		pathLevels	: 1,
-		delay		: 100000,
+		delay		: 99800,
 		animation	: {opacity:'show'},		
 		speed		: 'normal',
 		closeAnimation: {opacity: 'hide'},
@@ -139,13 +131,15 @@
 			var o = sf.op,
 				sh = sf.c.shadowClass+'-off',
 				$ul = this.addClass(o.hoverClass)
-					.find('ul').css('visibility','visible').addClass('animated slideInRight sf-menu-aided-navigation-new sf-menu-aided-navigation-object');
-			sf.IE7fix.call($ul);
+					.find('ul').css('visibility','visible').addClass('animated slideInRight sf-menu-aided-navigation-new sf-menu-aided-navigation-object')
+					$('h2.block__title.block-title').append('<i class="fas fa-arrow-left');
+					
+       	sf.IE7fix.call($ul);
 			o.onBeforeShow.call($ul);
 			$ul.animate(o.animation,o.speed,function(){ sf.IE7fix.call($ul); o.onShow.call($ul); });
 			return this;
 		},
-	
+
 	});
 
 })(jQuery);
