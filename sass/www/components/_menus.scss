@@ -64,7 +64,7 @@ ul {
 
 /* aided navigation */
 
-ul.sf-menu-aided-navigation {
+div.sf-menu-aided-navigation {
     float: left;
     background-color: grey;
     text-align: center;
@@ -85,14 +85,14 @@ ul.sf-menu-aided-navigation {
 .sf-menu-aided-navigation a.sf-depth-1.menuparent.toc-filter-processed.sf-with-ul, 
 .sf-menu-aided-navigation a.sf-depth-1.menuparent.sf-with-ul, 
 .sf-menu-aided-navigation a.sf-depth-1 {
-    width: 25em !important;
+    width: 12em !important;
     min-height: 200px;
     border: solid 3px #fff !important;
     padding: 15px !important;
     margin: 15px 5px;
 }
 .sf-menu-aided-navigation a.sf-depth-2{
-    width:25em !important;
+    width:12em !important;
     min-height:200px;
     padding: 15px !important;
     margin: 15px 5px;
@@ -110,7 +110,7 @@ ul.sf-menu-aided-navigation {
     margin: 0;
 }
 .sf-menu-aided-navigation .sf-depth-1, .sf-menu-aided-navigation .sf-depth-2 {
-    width: 21%;
+    width: 25%;
     float: none;
 }
 .sf-menu-aided-navigation ul.menu li a{
@@ -118,4 +118,9 @@ ul.sf-menu-aided-navigation {
 }
 .sf-menu-aided-navigation a.sf-depth-1:hover {
     background: rgba(22, 155, 213, 1) !important;
+}
+ul#superfish-3 {
+    margin: 0 auto !important;
+    float: none;
+    text-align: center;
 }
