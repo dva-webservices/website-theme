@@ -16,6 +16,10 @@
 
 
 /*region backgrounds*/
+body {
+  width:100%;
+  overflow-x:hidden; //to overcome viewport bug for fullwidth inside fixed width containers
+}
 #content{
   padding-bottom:2*$standard-margin;
 }
@@ -53,23 +57,24 @@
 .section-divider {
   @include clearfixtext;
 }
-/*
+
 .full-width {
-  width: 100vw;
+ width: 100vw;
   position: relative;
   left: 50%;
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
 }
+
 @mixin full-width {
-  width: 100vw;
+ width: 100vw;
   position: relative;
   left: 50%;
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
-}*/
+}
 
 
 

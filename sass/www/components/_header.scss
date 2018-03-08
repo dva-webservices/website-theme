@@ -16,7 +16,7 @@ header {
   }
 }
 .topbar-controls .uikit-accordion__title{
-  margin-right: 4em;
+  /*margin-right: 4em;*/
 }
 .topbar-controls a{
   padding:1.2em 2.25em 0.5em 0.5em;
@@ -47,6 +47,8 @@ header {
         }
         &.facebook {
           margin-top:6px;
+          float:left !important;
+          margin-right:0 !important;
         }
       } 
     }
@@ -66,6 +68,6 @@ header {
   background-color:$grey--95; 
 }
 img.facebook {
-float:left !important;
-margin-right:0 !important;
+  /*float:left !important;
+  margin-right:0 !important;*/
 }

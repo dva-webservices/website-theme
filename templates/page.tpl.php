@@ -7,8 +7,9 @@
   <nav class="uikit-skip-link"><a class="uikit-skip-link__link" href="#content">Skip to main content</a></nav>
   <header class="uikit-header landing-page">
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-  <div class="header-top">
-       <div class="container">  
+  <div class="container-fluid header-top">
+       <div class="container">
+  
          <?php print render($page['header_top']); ?>
        </div>
   </div>
@@ -39,7 +40,7 @@
 		
 	
     </div>
-      <div class="navigation">
+      <div class="container-fluid navigation">
       <div class="container">
 	<?php print render($page['navigation']); ?>
       </div>
@@ -50,7 +51,7 @@
   <main>
     <div id="page">
       <section>
-	<div id="content-top" class="hero-section">
+	<div id="content-top" class="container-fluid hero-section">
 	  <div class="container">
   		<?php print render($page['highlighted']); ?>
  		<?php print $breadcrumb; ?>  
@@ -66,9 +67,8 @@
 	</div>
      </section>
      <section>
-  	<div id="main">
+  	<div id="main" class="container">
     	<div id="content" class="column" role="main">
-      <div class="container">
       		<a href="#skip-link" id="skip-content" class="element-invisible">Go to top of page</a>
             	<?php print render($title_suffix); ?>
       		<?php print $messages; ?>
@@ -77,7 +77,6 @@
      		<?php if ($action_links): ?>
        			<ul class="action-links"><?php print render($action_links); ?></ul>
       		<?php endif; ?>
-          </div>
       		<?php print render($page['content']); ?>
       		<?php print $feed_icons; ?>
     	</div>
@@ -97,7 +96,7 @@
   </div>
   </section>
   <section>
-  	<div id="content-bottom">      
+  	<div id="content-bottom" class="container-fluid">
   		<?php print render($page['content_bottom']); ?>
   	</div>
   </section> 

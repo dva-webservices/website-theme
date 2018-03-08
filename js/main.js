@@ -7,16 +7,17 @@ jQuery(document).ready(function($){
   $('.messages--status').addClass('uikit-page-alerts--info');
   //$('<div class="section-divider full-width"><div class="arrow-down"></div></div>').insertAfter('.document-links-section');
   $('.form-submit').addClass('uikit-btn');
-  $('.views-exposed-form').addClass('container');
+  //$('.views-exposed-form').addClass('container');
   //news
   $('.news-categories .view-header li').insertBefore('.news-categories ul>li:first');
   $('.views-row.tags').removeClass('col-md-6');
   $('.views-row-1.tags').addClass('full-width');
+  $('.views-row-1.tags').wrapInner('<div class="container"></div>');
 
   //change banner image to background
- // var imgPath = $('.banner-image img').attr('src');
-  //$('.banner-image').css('background-image','url('+imgPath+')');
-  //$('.banner-image img').addClass('element-invisible');
+ var imgPath = $('.banner-image img').attr('src');
+ $('.banner-image').css('background-image','url('+imgPath+')');
+ $('.banner-image img').addClass('element-invisible');
 
   //main menu
   $('.region-navigation #block-superfish-1 .first a').prepend('<i class="fas fa-home"></i>');

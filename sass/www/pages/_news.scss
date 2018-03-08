@@ -7,15 +7,7 @@
     padding-bottom:2*$standard-margin;
 }*/
 
-/* AZ TEMP */
-.view-latest-news .view-header h2 a,
-.views-row-1.tags a{
-    color:$white;
-}
-.first-news-item, .first-news-item .news-title a,
-.views-row-1.tags{
-    color:$white;
-}
+
 
 .views-row h2{
     margin-bottom: 0;
@@ -28,12 +20,19 @@
     text-align:center;
     margin-top:15px;
     .date-num {
-        font-size:3em;
+        font-size: 2em;
+        @include breakpoint(tablet) {
+            font-size:3em;
+        }
+        
         line-height:0.7;
     }
     .date-month{
         text-transform: uppercase;
-        font-size: 1.8em;      
+        font-size: 1.2em;      
+        @include breakpoint(tablet) {
+            font-size:1.8em;
+        }
     }
 }
 .news-categories {
@@ -61,21 +60,38 @@
 
 .section-news, .front {
 .news-listing { 
+    h2 {
+        a{
+            color:$white;
+        }
+    }
     .more-link {
         text-align:right;
         padding-bottom:$standard-margin;
     }  
     .news-title {
-        font-size:2em;
-        margin-left:5*$standard-margin;
+        margin-left:3*$standard-margin;
+        padding-top:10px;
+        @include breakpoint(tablet){
+            font-size:2em;
+            margin-left:5*$standard-margin;
+        }  
+        
+       
     }
     .summary {
-        margin-left:5*$standard-margin;
+        margin-left:3*$standard-margin;
+        @include breakpoint(tablet){
+            margin-left:5*$standard-margin;
+        }
         padding-top:$standard-margin;
         padding-bottom:$standard-margin;
     }
     .taxonomy {
-        margin-left:5*$standard-margin;
+        margin-left:3*$standard-margin;
+        @include breakpoint(tablet){
+            margin-left:5*$standard-margin;
+        }
         ul {
             list-style: none;
             margin-left:0;
@@ -106,36 +122,61 @@
             width:100% !important;
         }
     }
+    .attachment {
+        background-color:$white;       
+        padding-top:$standard-margin;
+        @include breakpoint(tablet) {
+            padding:0;
+        }
+
+    }
 
     .first-news-item, .views-row-first {
+        color:$white;
         background-color:$blue-grey;
         padding-top:2*$standard-margin;
         padding-bottom:2*$standard-margin;
+        a {
+            color:$white;
+        }           
+          
         .news-title, .summary, .taxonomy {
-            margin-left:8*$standard-margin;
+            margin-left:4*$standard-margin;  
+            @include breakpoint(tablet) {     
+            margin-left:8*$standard-margin;  
+            }         
         }
 
-        .news-date {           
+        .news-date {    
+               
             .date-num {
+                
+                @include breakpoint(tablet) { 
                 font-size:4.3em;
                 line-height:0.7;
+                }
             }
-            .date-month{              
-                font-size: 2.5em;      
+            .date-month{    
+                
+                @include breakpoint(tablet) {           
+                font-size: 2.5em;     
+                } 
             }
         }
+        }
     }
-    
-
-}
 }
 .home-news-listing.news-listing {
     .first-news-item {
         padding-top:0;
-        background-color:none;
+        /*background-color:none;*/
     }
 
 }
 #block-views-latest-news-block-1 {
-    @include container-with-gradient;
+    background-color:$blue-grey;
+    @include breakpoint(tablet) {
+        @include container-with-gradient;
+
+    }
 }
