@@ -29,13 +29,13 @@ footer {
     text-align: center!important;
       li.menu__item{
         a.menu__link{
-          color:$grey--80!important; 
-          padding:0!important;
+          color:$grey--80 !important; 
+          padding:0 !important;
           margin-left:1.5em;
         }
       li a:hover{
         color:$white!important;
-        background-color:none!important;
+        background-color:none !important;
         text-decoration: underline;
       }
     }

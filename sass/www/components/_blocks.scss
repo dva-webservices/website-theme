@@ -10,6 +10,10 @@
 
 #block-block-1{ 
   background:$grey--20;
+  padding-top:$standard-margin;
+  a {
+    color:$white;
+  }
 }
 
 /*feature links*/

@@ -98,12 +98,23 @@ sup.beta{
     padding: 0 6px 3px;
     border-radius: 5px;
 }
-.topbar-controls .uikit-accordion__title {
-    margin-right:4em;
-}
-a {
-    &.panel-close {
-        color:$white !important;
+.topbar-controls {
+    .uikit-accordion__title {
+    margin-right:1em;
+    }
+
+    a {
+        padding:1.2em 2.25em 0.5em 0.5em;
+        border-bottom:none;
+        &.panel-close {
+            color:$white !important;
+        }
     }
 }
+
+  .accordion-toppanel--wrapper{
+    .logout {
+      float:none !important;
+    }
+  }
 

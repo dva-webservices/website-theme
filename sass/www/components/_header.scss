@@ -15,12 +15,7 @@ header {
     margin:0;
   }
 }
-.topbar-controls .uikit-accordion__title{
-  /*margin-right: 4em;*/
-}
-.topbar-controls a{
-  padding:1.2em 2.25em 0.5em 0.5em;
-}
+
 
 .region-header-top {
   background:$black;
@@ -70,4 +65,17 @@ header {
 img.facebook {
   /*float:left !important;
   margin-right:0 !important;*/
+}
+nav {
+  &.breadcrumb {
+    ol {
+      li  {
+        padding:0 3px !important;
+
+        &:first-child {
+         padding-left:0;
+        }
+      }
+    }
+  }
 }
