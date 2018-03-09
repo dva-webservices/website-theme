@@ -1,4 +1,5 @@
 jQuery(document).ready(function($){
+	/*
 	// open the panel
 	$('.panel-btn').click(function(event){
 		event.preventDefault();
@@ -11,7 +12,7 @@ jQuery(document).ready(function($){
 			$('.panel').removeClass('is-visible');
 			event.preventDefault();
 		}
-    });
+    });*/
 
     // Swap text on top panel accordion button
 	var open = false;

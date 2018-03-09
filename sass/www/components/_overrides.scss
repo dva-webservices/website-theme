@@ -101,3 +101,9 @@ sup.beta{
 .topbar-controls .uikit-accordion__title {
     margin-right:4em;
 }
+a {
+    &.panel-close {
+        color:$white !important;
+    }
+}
+

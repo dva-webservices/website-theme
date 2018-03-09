@@ -5,7 +5,7 @@ jQuery(document).ready(function($){
   $('.messages--warning').addClass('uikit-page-alerts--warning');
   $('.messages--error').addClass('uikit-page-alerts--error');
   $('.messages--status').addClass('uikit-page-alerts--info');
-  //$('<div class="section-divider full-width"><div class="arrow-down"></div></div>').insertAfter('.document-links-section');
+  $('<div class="section-divider full-width"><div class="arrow-down"></div></div>').insertAfter('.document-links-section');
   $('.form-submit').addClass('uikit-btn');
   //$('.views-exposed-form').addClass('container');
   //news
@@ -23,30 +23,40 @@ jQuery(document).ready(function($){
   $('.region-navigation #block-superfish-1 .first a').prepend('<i class="fas fa-home"></i>');
 
 
+//setup classes for feedback webform
+$('#block-webform-client-block-1648').addClass('panel from-right');
+$('#block-webform-client-block-1648 h2').wrap('<div class="panel-header"></div>');
+$('#block-webform-client-block-1648 form').wrap('<div class="panel-container"><div class="panel-content"></div></div>');
+$('#block-webform-client-block-1648 .form-actions').append(' <button class="panel-close uikit-btn uikit-btn--tertiary">Cancel</button>');
+$('#block-webform-client-block-1648 .panel-header').append('<a class="panel-close" href="javascript:void(0);">Close</a>');
+
 //Open and close feedback panel
-$('.trial-message a').click (function(event){
+$('.feedback-link').click(function(event){
     event.preventDefault();
-    $('.panel.from-right').addClass('is-visible');
+    $('#block-webform-client-block-1648').addClass('is-visible');
 });
 // close the feedback panel
-$('.panel-feedback').click (function(event){
-    if( $(event.target).is('.panel.from-right') || $(event.target).is('.panel-close') ) { 
-        $('.panel.from-right').removeClass('is-visible');
+$('#block-webform-client-block-1648 .panel-close').click(function(event){
+    if( $(event.target).is('#block-webform-client-block-1648') || $(event.target).is('.panel-close') ) { 
+        $('#block-webform-client-block-1648').removeClass('is-visible');
         event.preventDefault();
     }
 });
-	// open feedback panel
-	$('.feedback-panel-btn').click(function(event){
-		event.preventDefault();
-		$('.panel-feedback').addClass('is-visible');
-	});
-	// close the feedback panel
-	$('.panel-feedback').click( function(event){
-		if( $(event.target).is('.panel-feedback') || $(event.target).is('.panel-close') ) { 
-			$('.panel-feedback').removeClass('is-visible');
-			event.preventDefault();
-		}
-	});
+
+
+//Open and close myservice login panel
+$('.logout').click(function(event){
+    event.preventDefault();
+    $('#myservice-login').addClass('is-visible');
+});
+// close the feedback panel
+$('#myservice-login .panel-close').click(function(event){
+    if( $(event.target).is('#myservice-login') || $(event.target).is('.panel-close') ) { 
+        $('#myservice-login').removeClass('is-visible');
+        event.preventDefault();
+    }
+});
+	
 
 });
 
