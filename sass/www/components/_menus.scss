@@ -1,26 +1,18 @@
 /*- PRIMARY NAVIGATION - */
 
-.navigation{
-    background: $grey--10!important;
-}
-.region-navigation ul#superfish-1 li a{
-    color:$grey--85 !important;
-}
-
 .region-navigation{
     #block-superfish-1 {
         clear:both;
         ul.menu {
-            float:none;
-            background-color: $grey--10 !important;
-            border-top:1px solid $grey--20;
+            float:none;           
             width: 100%;        
         }
         li{
             a{
                 font-size:0.9em;            
                 border-bottom:3px solid transparent !important;
-                margin:0 0 -1px 0 !important;       
+                margin:0 0 -1px 0 !important;  
+                color:$grey--85 !important;     
             }
             a:hover{
                 color:$white !important;
@@ -29,12 +21,7 @@
         }
         .first {
             min-width:25px;
-            a {
-               /* background-image: url("../images/icon-home.png");
-                background-size: 80% auto;
-                background-repeat:no-repeat;
-                background-position:3px 10px;
-                text-indent:1000px;*/
+            a {               
                 width:40px !important;
                 height:38px;
                 overflow:hidden;
@@ -63,66 +50,42 @@ ul {
 }
 
 /* aided navigation */
-
+#block-superfish-3 {
+    background-color:$grey--40;
+    color:$white;
+    padding-bottom:$standard-margin;
+}
+.back-btn {
+    text-align:right;
+    margin-top:-100px;    
+    color: $white;
+    font-size:4em;
+}
 div.sf-menu-aided-navigation {
-    float: left;
-    background-color: grey;
     text-align: center;
     width:100%;
-    padding-top: 5em !important;
+    padding-top: 4em;
+    a {
+        &.sf-depth-1, &.sf-depth-2 {
+        width: 15em !important;
+        //width:90% !important;
+        min-height: 200px;
+        border: solid 3px $white !important;
+        padding: $standard-margin !important;
+        margin: $standard-margin $standard-margin/3;
+        }       
+    }  
+    h2 {
+        text-align:left;
+        color:$white;
+    }
 }
-.sf-menu-aided-navigation ul.sf-has-clone-parent {
-    top: 0em !important;
-    height: 100%;
-}
-.sf-menu-aided-navigation .col-sm-3 {
-    border: solid 1px #fff;
-    min-height: 200px;
-    margin: 5px !important;
-    width: 23%;
-    /* margin: 0 auto; */
-}
-.sf-menu-aided-navigation a.sf-depth-1.menuparent.toc-filter-processed.sf-with-ul, 
-.sf-menu-aided-navigation a.sf-depth-1.menuparent.sf-with-ul, 
-.sf-menu-aided-navigation a.sf-depth-1 {
-    width: 12em !important;
-    min-height: 200px;
-    border: solid 3px #fff !important;
-    padding: 15px !important;
-    margin: 15px 5px;
-}
-.sf-menu-aided-navigation a.sf-depth-2{
-    width:12em !important;
-    min-height:200px;
-    padding: 15px !important;
-    margin: 15px 5px;
-    border: solid 3px #fff !important;
-}
+
+/*sub menu children*/
 .sf-menu-aided-navigation-new{
     width: 100% !important;
-    background-color: grey !important;
+    background-color:$grey--40 !important;
     height: 100%;
-    top: 0em !important;
+    top: 0 !important;
 }
 
-#block-superfish-3 h2.block__title.block-title {
-    background: grey;
-    margin: 0;
-}
-.sf-menu-aided-navigation .sf-depth-1, .sf-menu-aided-navigation .sf-depth-2 {
-    width: 25%;
-    float: none;
-}
-.sf-menu-aided-navigation ul.menu li a{
-    border-bottom:solid 3px #fff;
-}
-.sf-menu-aided-navigation a.sf-depth-1:hover {
-    background: rgba(22, 155, 213, 1) !important;
-}
-ul#superfish-3 {
-    margin: 0 auto !important;
-    float: none;
-    text-align: center;  
-    vertical-align:middle;
-
-}

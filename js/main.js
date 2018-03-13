@@ -25,7 +25,7 @@ jQuery(document).ready(function($){
 
 //setup classes for feedback webform
 
-$('.region-content-bottom .block-webform').addClass('panel from-right');
+$('.region-content-bottom .block-webform').addClass('from-right');
 $('.region-content-bottom .block-webform h2').wrap('<div class="panel-header"></div>');
 $('.region-content-bottom .block-webform form').wrap('<div class="panel-container"><div class="panel-content"></div></div>');
 $('.region-content-bottom .block-webform .form-actions').append(' <button class="panel-close uikit-btn uikit-btn--tertiary">Cancel</button>');
