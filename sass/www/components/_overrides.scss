@@ -36,10 +36,18 @@
 }
 .accordion-toppanel--wrapper{
     background:none;
+    .logout {
+      float:none !important;
+    }
+    .uikit-accordion.accordion-open .uikit-accordion__body {
+        max-height:300px;
+    }
     .uikit-accordion__title {
         background:none;
     }
-}
+  } 
+
+
 ul {
     max-width:none;
 }
@@ -47,24 +55,6 @@ input[type=text], input[type=name], input[type=date], input[type=tel], input[typ
     max-width:none;
 }
 
-.region-header-top .uikit-body .uikit-accordion__title, .region-header-top .uikit-accordion__title {
-    color:$white !important;
-    padding:0 70px 0 0 ;
-    border:none !important;
-    background:none !important;
-    display:inline-block !important;
-    font-size:1em important;
-    font-weight:normal;
-    &:after {
-        right:2.7em;
-        background-image: url("/sites/all/themes/custom/dva/images/arrow-white.svg");
-        background-position: 0.30px;
-       background-repeat: no-repeat;
-    }
-}
-.region-header-top .uikit-accordion__body-wrapper {
-border:none;
-}
 .trial-message {
     color:$white;
     display:inline-block;
@@ -78,14 +68,42 @@ border:none;
 header.landing-page img {
    border:none; 
 }
-.accordion-toppanel--wrapper .uikit-accordion.accordion-open .uikit-accordion__body {
-max-height:300px;
-}
+
 .support-box .facebook {
     width:15px;
 }
-.region-header-top .panel, .region-header-top .panel a, .region-header-top .panel button.panel-close {
-    color:$black;
+.region-header-top {
+    .panel {
+        color:$black;
+        a {
+            color:$black;
+            &.panel-close {
+                color:$white;
+            }
+        }            
+        button.panel-close{
+            color:$white;
+        }
+    }
+    .uikit-accordion__body-wrapper {
+        border:none;
+    }
+    .uikit-body .uikit-accordion__title, .uikit-accordion__title {
+        color:$white !important;
+        padding:0 70px 0 0 ;
+        border:none !important;
+        background:none !important;
+        display:inline-block !important;
+        font-size:1em important;
+        font-weight:normal;
+        &:after {
+            right:2.7em;
+            background-image: url("/sites/all/themes/custom/dva/images/arrow-white.svg");
+            background-position: 0.30px;
+           background-repeat: no-repeat;
+        }
+    }
+    
 }
 header.landing-page .uikit-accordion img {
 float:none;
@@ -112,9 +130,4 @@ sup.beta{
     }
 }
 
-  .accordion-toppanel--wrapper{
-    .logout {
-      float:none !important;
-    }
-  }
-
+ 

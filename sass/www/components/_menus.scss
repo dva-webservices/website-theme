@@ -12,20 +12,20 @@
                 font-size:0.9em;            
                 border-bottom:3px solid transparent !important;
                 margin:0 0 -1px 0 !important;  
-                color:$grey--85 !important;     
-            }
-            a:hover{
-                color:$white !important;
-                border-color:$mid-blue !important;
+                color:$grey--85 !important;   
+                padding:.25em 1em 0 1em !important;  
+                &:hover {
+                    color:$white !important;
+                    border-color:$mid-blue !important;
+                }
             }
         }
         .first {
             min-width:25px;
             a {               
                 width:40px !important;
-                height:38px;
-                overflow:hidden;
-                
+                height:34px;
+                overflow:hidden;                
             }
             .svg-inline--fa {
                 height:2em !important;
@@ -39,21 +39,15 @@
     padding-left:30px;
 }
 
-ul {    
-    &.menu {        
-        li {
-            a {
-                padding:.25em 1em 0 1em !important;
-            }
-        }
-    }
-}
 
 /* aided navigation */
 #block-superfish-3 {
     background-color:$grey--40;
     color:$white;
     padding-bottom:$standard-margin;
+    ul.menu {
+        display:block;
+    }
 }
 .back-btn {
     text-align:right;
@@ -62,7 +56,7 @@ ul {
     font-size:4em;
 }
 div.sf-menu-aided-navigation {
-    text-align: center;
+    //text-align: center;
     width:100%;
     padding-top: 4em;
     a {

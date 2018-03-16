@@ -8,6 +8,7 @@ jQuery(document).ready(function($){
   $('<div class="section-divider full-width"><div class="arrow-down"></div></div>').insertAfter('.document-links-section');
   $('.form-submit').addClass('uikit-btn');
   //$('.views-exposed-form').addClass('container');
+  
   //news
   $('.news-categories .view-header li').insertBefore('.news-categories ul>li:first');
   $('.views-row.tags').removeClass('col-md-6');
