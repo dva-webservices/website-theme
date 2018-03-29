@@ -1,8 +1,9 @@
 # DVA website theme
-Combines Myservice theme and the Digital Transformation Agency's UI-Kit 2.0
+Combines Myservice theme (ref. https://github.com/AusDVA/myservice-prototype) and the Digital Transformation Agency's UI-Kit 2.0
 
-Install Gulp CLI npm install --global gulp-cli
+Install Gulp CLI, then install and serve
 
-Run npm install
-
-Then run gulp serve
+    npm install --global gulp-cli
+    npm install
+    gulp serve # or npm run build:styles
+    
